@@ -10,7 +10,7 @@ class Navbar extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <div className="container">
+                <div className="container border-bottom">
                     <nav className="navbar navbar-expand-md bg-transparent navbar-light">
                         <a className="navbar-brand" href="/Home"><img src={logo}/> </a>
                         <a className="navbar-brand styleNavbar" href="/Home">La Cueva Studio</a>

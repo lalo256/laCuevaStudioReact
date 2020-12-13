@@ -1,0 +1,29 @@
+.presentacinTitulo{
+    color: red;
+    font-family: arial;
+    padding: 10px;
+}
+.nosotrosPresentacion{
+    color:gray;
+    font-family: arial;
+    pading:15px;
+}
+.lema{
+    color:gray;
+    text-align: center;
+    padding: 15px;
+}
+.botonesNombre{
+    font-family: Ailerons-Regular;
+
+}
+.descripcionNoso{
+    padding: 30px;
+    font-family: arial;
+    color: gray;
+    font-size: 35px;
+}
+
+.displayedNone{
+
+}

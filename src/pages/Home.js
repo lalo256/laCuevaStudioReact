@@ -17,23 +17,15 @@ class Home extends React.Component{
                     <Carousel>
                         <Carousel.Item interval={3000}>
                             <img className="imgcarusel" src={carru1} />
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img className="imgcarusel" src={carru2}/>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Carousel.Item>
+                            </Carousel.Item>
                         <Carousel.Item>
                             <img className="imgcarusel" src={carru3}/>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img className="imgcarusel" src={carru4}/>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>

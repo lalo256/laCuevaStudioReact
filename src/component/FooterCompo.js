@@ -6,7 +6,7 @@ class FooterCompo extends React.Component{
     render() {
         return(
             <React.Fragment>
-                <div className="container fontFooter">
+                <div className="fontFooter">
                     <p>Copyright © Todos los Derechos Reservados. </p>
                     <a href="https://www.instagram.com"><img className="instaImg" src={Insta}/></a>
                 </div>
