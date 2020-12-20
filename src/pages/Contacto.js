@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "emailjs-com";
 import Navbar from "../component/Navbar";
 import FooterCompo from "../component/FooterCompo";
 import Conta1 from '../Images/2451.jpeg';
@@ -45,9 +46,18 @@ class Contacto extends React.Component{
         this.setState({mensaje: event.target.value});
     }
 
-    handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
+    handleSubmit(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_1sx21f8', 'template_3ipxu2b', e.target, 'user_jW4lzGf9jxdT65vioUnDZ')
+            .then((result) => {
+                console.log(result.text);
+                alert('simon');
+            }, (error) => {
+                console.log(error.text);
+                alert('no simon');
+            });
+        e.target.reset();
     }
 
     render() {
@@ -74,7 +84,7 @@ class Contacto extends React.Component{
                                                     <td>
                                                         <input
                                                             type="text"
-                                                            id="nombre"
+                                                            name="nombre"
                                                             value={this.state.value}
                                                             onChange={this.handleChangename}
                                                         />
@@ -88,7 +98,7 @@ class Contacto extends React.Component{
                                                     <td>
                                                         <input
                                                             type="email"
-                                                            id="email"
+                                                            name="email"
                                                             value={this.state.value}
                                                             onChange={this.handleChangeemail}
                                                         />
@@ -102,7 +112,7 @@ class Contacto extends React.Component{
                                                     <td>
                                                         <input
                                                             type="text"
-                                                            id="telefono"
+                                                            name="fon"
                                                             value={this.state.value}
                                                             onChange={this.handleChangefon}
                                                         />
@@ -116,7 +126,7 @@ class Contacto extends React.Component{
                                                     <td>
                                                         <input
                                                             type="text"
-                                                            id="asunto"
+                                                            name="asunto"
                                                             value={this.state.value}
                                                             onChange={this.handleChangeasunto}
                                                         />
@@ -128,9 +138,9 @@ class Contacto extends React.Component{
                                                 <tr>
                                                     <td>Mensaje</td>
                                                     <td>
-                                                        <input
-                                                            type="text"
-                                                            id="mensaje"
+                                                        <textarea
+                                                            
+                                                            name="mensaje"
                                                             value={this.state.value}
                                                             onChange={this.handleChangemensaje}
                                                         />
@@ -144,14 +154,13 @@ class Contacto extends React.Component{
                                                     <td>
                                                         <input
                                                             type="submit"
-                                                            id="btnsubmit"
                                                             value="Enviar"
                                                             className="btn btn-outline-dark"
                                                         />
                                                     </td>
                                                 </tr>
                                             </table>
-                                        </div>
+                                            </div>
                                     </form>
                                 </div>
                             </div>
