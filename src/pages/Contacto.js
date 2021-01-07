@@ -5,6 +5,7 @@ import FooterCompo from "../component/FooterCompo";
 import Conta1 from '../Images/2451.jpeg';
 import Conta2 from '../Images/2452.1.jpeg';
 import Conta3 from '../Images/2453.1.jpeg';
+import logo from '../Images/1451.jpg';
 import '../component/style/Contacto.css';
 
 class Contacto extends React.Component{
@@ -52,10 +53,10 @@ class Contacto extends React.Component{
         emailjs.sendForm('service_1sx21f8', 'template_3ipxu2b', e.target, 'user_jW4lzGf9jxdT65vioUnDZ')
             .then((result) => {
                 console.log(result.text);
-                alert('simon');
+                alert('Gracias por contactar a La Cueva Studio, pronto nos pondremos en contacto');
             }, (error) => {
                 console.log(error.text);
-                alert('no simon');
+                alert('Error al mandar correo, intentelo mas tarde');
             });
         e.target.reset();
     }
@@ -139,7 +140,7 @@ class Contacto extends React.Component{
                                                     <td>Mensaje</td>
                                                     <td>
                                                         <textarea
-                                                            
+
                                                             name="mensaje"
                                                             value={this.state.value}
                                                             onChange={this.handleChangemensaje}
