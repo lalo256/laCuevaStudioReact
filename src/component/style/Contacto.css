@@ -5,3 +5,31 @@
 .window{
     background-color: lightsteelblue;
 }
+
+@media only screen and (max-width: 768px) {
+    .imgContactoSm{
+        width: 2.3rem;
+        height: 23rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ocultar-divs{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ocultar-div{
+        display: none;
+    }
+    .formContactoSm{
+        font-size: .5rem;
+    }
+    .titleSm{
+        font-size: 2px;
+    }
+    .contactFont{
+
+    }
+}

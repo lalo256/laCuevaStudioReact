@@ -54,19 +54,20 @@ class NosotrosDesc extends React.Component{
                             <div>
                                 <div className="container-fluid">
                                     <div className="row">
-                                        <div className="col-sm-4">
-                                            <img src={Noso1} />
+                                        <div className="col-3">
+                                            <img className="imgNosoM" src={Noso1} />
                                         </div>
-                                        <div className="col-sm-8">
-                                            <p className="descripcionNoso">
+                                        <div className="col-1"></div>
+                                        <div className="col-7">
+                                            <h6 className="descripcionNoso fontM">
                                                 Curso sus estudios de arquitectura en la universidad
                                                 tecnologica de mexico, con especilizacion en el diseño
                                                 de interiores.
-                                                enfocado a los proyecyos habitacionales y proyectos
+                                                enfocado a los proyectos habitacionales y proyectos
                                                 de impacto social.
                                                 buscando siempre sustentabilidad, bajo costo de las obras
                                                 y el confort de las personas.
-                                            </p>
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -77,16 +78,16 @@ class NosotrosDesc extends React.Component{
                             <div >
                                 <div className="container-fluid">
                                     <div className="row">
-                                        <div className="col-sm-1"></div>
-                                        <div className="col-sm-3">
-                                            <img src={Noso2} />
+                                        <div className="col-3">
+                                            <img className="imgNosoM" src={Noso2} />
                                         </div>
-                                        <div className="col-sm-8">
-                                            <p className="descripcionNoso">
-                                                Cursa sus estudios en contaduría en la universidad tecnológica
+                                        <div className="col-1"></div>
+                                        <div className="col-7">
+                                            <h6 className="descripcionNoso fontM">
+                                                Curso sus estudios en contaduría en la universidad tecnológica
                                                 de México , enfocado en el area economico-administrativa para
                                                 una mejor canalización de los recursos.
-                                            </p>
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -97,17 +98,16 @@ class NosotrosDesc extends React.Component{
                             <div>
                                 <div className="container-fluid">
                                     <div className="row">
-                                        <div className="col-sm-2"></div>
-                                        <div className="col-sm-2">
-                                            <img src={Noso3} />
+                                        <div className="col-3">
+                                            <img className="imgNosoM" src={Noso3} />
                                         </div>
-                                        <div className="col-sm-1"></div>
-                                        <div className="col-sm-7">
-                                            <p className="descripcionNoso">
+                                        <div className="col-1"></div>
+                                        <div className="col-7">
+                                            <h5 className="descripcionNoso fontM">
                                                 Ingeniero en sistemas, enfocado a nuevas tecnologías
                                                 capaces de automatizar una vivienda o edificación de
                                                 cualquier tipo.
-                                            </p>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
