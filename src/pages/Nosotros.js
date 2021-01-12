@@ -12,8 +12,8 @@ class Nosotros extends React.Component{
                 <div className="container">
                     <h1 className="presentacinTitulo">Nosotros</h1>
                     <p className="nosotrosPresentacion">
-                        Studio la Cueva con sede en ciudad de Mexico y cuautla Morelos
-                        enfocado en el diseño, construcción, remodelacion y diseño de interiores
+                        La Cueva Studio con sede en ciudad de México y cuautla Morelos
+                        enfocado en el diseño, construcción, remodelación y diseño de interiores
                         de viviendas unifamiliares y proyectos con poco presupuesto, garantizando la calidad de la obra.
                         <br/>
                             Fundado por Carlos Cuevas, Eduardo Cuevas Y Jesus Cuevas.
