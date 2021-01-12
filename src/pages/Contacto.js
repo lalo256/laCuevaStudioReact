@@ -126,7 +126,7 @@ class Contacto extends React.Component{
                                 <div className="col-5 container-fluid ocultar-divs">
                                     <form onSubmit={this.handleSubmit}>
                                         <div>
-                                            <h1 className="titleContac text-danger">Contactanos</h1>
+                                            <h1 className="titleContac text-danger">Contáctanos</h1>
 
                                             <div className="col-6 col-sm-6">
                                             <table className="tablaContacto table-borderless">
@@ -220,7 +220,7 @@ class Contacto extends React.Component{
                                     <div className="col-sm-2 container-fluid">
                                         <form onSubmit={this.handleSubmitM}>
                                             <div>
-                                                <h4 className="titleContac text-danger">Contactanos</h4>
+                                                <h4 className="titleContac text-danger">Contáctanos</h4>
                                                 <table>
                                                     <tr><td className="contactFont">nombre:</td></tr>
                                                 </table>
