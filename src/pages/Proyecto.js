@@ -7,6 +7,8 @@ import P1_3 from '../Images/p0102.jpg';
 import P2_1 from '../Images/p0200.jpg';
 import P2_2 from '../Images/p0201.jpg';
 import P2_3 from '../Images/p0202.jpg';
+import P3_1 from '../Images/p0300.jpeg';
+import P3_2 from '../Images/p0301.jpeg';
 import Carousel from "react-bootstrap/Carousel";
 import '../component/style/proyecto.css'
 
@@ -33,7 +35,7 @@ class Proyecto extends React.Component{
                         </div>
                         <div className="col-8">
                             <p className="descripcionProject1">
-                                Propuesta de un proyecto residencial diseñada bajo la premisa de construir una propiedad elegante de bajo costo y con una simpleza en sus formas.
+                                Propuesta de un proyecto residencial diseñada bajo la premisa de construir una propiedad elegante de bajo costo, con una simpleza en sus formas.
                                 Consta con dos volúmenes intersectados y su simpleza la hace resaltar en sus tonos blancos.
                             </p>
                         </div>
@@ -58,8 +60,30 @@ class Proyecto extends React.Component{
                         <div className="col-8">
                             <p className="descripcionProject1">
                                 Propuesta residencial que consta de 3 volúmenes invisibles a la vista,
-                                resaltando sus tonalidades en grises negro y blanco, generando un
-                                espacio interior armónico y confortable
+                                resaltando sus tonalidades en grises, negros y blancos, generando un
+                                espacio interior armónico y confortable.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div className="row">
+                        <div className="col-4">
+                            <Carousel>
+                                <Carousel.Item interval={3000}>
+                                    <img className="imgcaruselP" src={P3_1} />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img className="imgcaruselP" src={P3_2}/>
+                                </Carousel.Item>
+                            </Carousel>
+                            <h5 className="titleProject">Casa Spring</h5>
+                        </div>
+                        <div className="col-8">
+                            <p className="descripcionProject1">
+                                Propuesta residencial para vacaciones, con un estilo moderno y
+                                vanguardista, consta de solo una planta la cual facilita su construcción.
+                                El blanco en su  fachada hace que el interior sea mas fresco de lo
+                                habitual.
                             </p>
                         </div>
 
