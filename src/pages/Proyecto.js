@@ -36,8 +36,8 @@ class Proyecto extends React.Component{
                         </div>
                         <div className="col-8">
                             <p className="descripcionProject1">
-                                Propuesta de casa residencial que tiene como premisa de diseño, La limpieza visual.
-                                El  interiorismo  es elegante y sobrio, con diseño simple y con acabados neutros .
+                                Residencia que tiene como premisa de diseño, La limpieza visual.
+                                El  interiorismo  es elegante y sobrio, diseño simple y acabados neutros .
                             </p>
                         </div>
 
@@ -58,7 +58,7 @@ class Proyecto extends React.Component{
                             </div>
                             <div className="col-8">
                                 <p className="descripcionProject1">
-                                    Propuesta de casa residencial que en su fachada
+                                    Residencia que en su fachada
                                     se observa líneas puras y simples en color blanco
                                     que inunda tanto el interior como el exterior de la residencia.
                                     Que conforma una vivienda moderna y simple, con terrazas y ventanales
@@ -85,7 +85,7 @@ class Proyecto extends React.Component{
                         </div>
                         <div className="col-8">
                             <p className="descripcionProject1">
-                                Propuesta de un proyecto residencial diseñada bajo la premisa de construir una propiedad elegante de bajo costo, con una simpleza en sus formas.
+                                Residencia diseñada bajo la premisa de construir una propiedad elegante de bajo costo, con una simpleza en sus formas.
                                 Consta con dos volúmenes intersectados y su simpleza la hace resaltar en sus tonos blancos.
                             </p>
                         </div>
@@ -109,7 +109,7 @@ class Proyecto extends React.Component{
                         </div>
                         <div className="col-8">
                             <p className="descripcionProject1">
-                                Propuesta residencial que consta de 3 volúmenes invisibles a la vista,
+                                Residencia que consta de 3 volúmenes invisibles a la vista,
                                 resaltando sus tonalidades en grises, negros y blancos, generando un
                                 espacio interior armónico y confortable.
                             </p>
@@ -130,7 +130,7 @@ class Proyecto extends React.Component{
                         </div>
                         <div className="col-8">
                             <p className="descripcionProject1">
-                                Propuesta residencial para vacaciones, con un estilo moderno y
+                                Residencia para vacaciones, con un estilo moderno y
                                 vanguardista, consta de solo una planta la cual facilita su construcción.
                                 El blanco en su  fachada hace que el interior sea mas fresco de lo
                                 habitual.
