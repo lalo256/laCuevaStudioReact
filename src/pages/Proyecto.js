@@ -11,6 +11,10 @@ import P3_1 from '../Images/p0300.jpeg';
 import P3_2 from '../Images/p0301.jpeg';
 import Carousel from "react-bootstrap/Carousel";
 import '../component/style/proyecto.css'
+import P5_1 from "../Images/p0500.jpeg";
+import P5_2 from "../Images/p0501.jpeg";
+import P4_1 from "../Images/p0400.jpeg";
+import P4_2 from "../Images/p0401.jpeg";
 
 class Proyecto extends React.Component{
     render() {
@@ -18,6 +22,52 @@ class Proyecto extends React.Component{
             <React.Fragment>
                 <Navbar />
                 <div className="container proyect">
+                    <div className="row">
+                        <div className="col-4">
+                            <Carousel>
+                                <Carousel.Item interval={3000}>
+                                    <img className="imgcaruselP" src={P5_1} />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img className="imgcaruselP" src={P5_2}/>
+                                </Carousel.Item>
+                            </Carousel>
+                            <h5 className="titleProject">Stanza Bianca</h5>
+                        </div>
+                        <div className="col-8">
+                            <p className="descripcionProject1">
+                                Propuesta de casa residencial que tiene como premisa de diseño, La limpieza visual.
+                                El  interiorismo  es elegante y sobrio, con diseño simple y con acabados neutros .
+                            </p>
+                        </div>
+
+                    </div>
+                    <br/>
+
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P4_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P4_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Puntos Altos</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Propuesta de casa residencial que en su fachada
+                                    se observa líneas puras y simples en color blanco
+                                    que inunda tanto el interior como el exterior de la residencia.
+                                    Que conforma una vivienda moderna y simple, con terrazas y ventanales
+                                    en la parte trasera que genera la entrada natural de los rayos del sol.
+                                </p>
+                            </div>
+
+                        </div>
+                        <br/>
                     <div className="row">
                         <div className="col-4">
                             <Carousel>

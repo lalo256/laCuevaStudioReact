@@ -5,6 +5,7 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './style/Navbar.css'
 import logo from '../Images/1451.png'
+import '../assets/fonts/Ailerons Regular.ttf';
 
 class Navbar extends React.Component{
     render() {
