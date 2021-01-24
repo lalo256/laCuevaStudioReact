@@ -37,7 +37,7 @@ class Proyecto extends React.Component{
                         <div className="col-8">
                             <p className="descripcionProject1">
                                 Residencia que tiene como premisa de diseño, La limpieza visual.
-                                El  interiorismo  es elegante y sobrio, diseño simple y acabados neutros .
+                                El  interiorismo  es elegante, sobrio, de diseño simple y acabados neutros .
                             </p>
                         </div>
 
