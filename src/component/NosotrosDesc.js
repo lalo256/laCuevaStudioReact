@@ -60,8 +60,7 @@ class NosotrosDesc extends React.Component{
                                         <div className="col-1"></div>
                                         <div className="col-7">
                                             <h6 className="descripcionNoso fontM">
-                                                Curso sus estudios de arquitectura en la universidad
-                                                tecnológica de méxico, con especilización en el diseño
+                                                Arquitecto con especilización en el diseño
                                                 de interiores.
                                                 Enfocado a los proyectos habitacionales y proyectos
                                                 de impacto social.
@@ -84,8 +83,7 @@ class NosotrosDesc extends React.Component{
                                         <div className="col-1"></div>
                                         <div className="col-7">
                                             <h6 className="descripcionNoso fontM">
-                                                Curso sus estudios en contaduría en la universidad tecnológica
-                                                de México , enfocado en el área economico-administrativa para
+                                                Contador enfocado en el área economico-administrativa para
                                                 una mejor canalización de los recursos.
                                             </h6>
                                         </div>
