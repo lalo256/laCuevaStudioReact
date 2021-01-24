@@ -17,8 +17,8 @@ class Nosotros extends React.Component{
                         de viviendas unifamiliares y proyectos con poco presupuesto, garantizando
                         la calidad de la obra.
                         <br/><br/>
-                        Buscando siempre una arquitectura con identidad mexicana , limpia de
-                        contrastes y matices , con  nuevas tecnologías , con espacios para
+                        Buscando siempre una arquitectura con identidad mexicana, limpia de
+                        contrastes y matices, con  nuevas tecnologías , con espacios para
                         disfrutar y vivir una experiencia intima en su interior, aislandose
                         del exterior con condiciones de confort (térmicas, iluminación,
                         acústicas y ergonomícas) y así trasmitir los deseos y necesidades
