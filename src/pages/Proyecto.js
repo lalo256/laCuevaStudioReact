@@ -15,6 +15,8 @@ import P5_1 from "../Images/p0500.jpeg";
 import P5_2 from "../Images/p0501.jpeg";
 import P4_1 from "../Images/p0400.jpeg";
 import P4_2 from "../Images/p0401.jpeg";
+import P6_1 from '../Images/p0600.jpeg';
+import P6_2 from '../Images/p0601.jpeg';
 
 class Proyecto extends React.Component{
     render() {
@@ -22,6 +24,31 @@ class Proyecto extends React.Component{
             <React.Fragment>
                 <Navbar />
                 <div className="container proyect">
+                    <div className="row">
+                        <div className="col-4">
+                            <Carousel>
+                                <Carousel.Item interval={3000}>
+                                    <img className="imgcaruselP" src={P6_1} />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img className="imgcaruselP" src={P6_2}/>
+                                </Carousel.Item>
+                            </Carousel>
+                            <h5 className="titleProject">Casa Purpura</h5>
+                        </div>
+                        <div className="col-8">
+                            <p className="descripcionProject1">
+                                Se compone de 3 volúmenes principales en su fachada, que le provee una estética única.
+                                La iluminación de los interiores enfatiza los grandes ventanales que coronan
+                                la estructura.Se rige por las líneas rectas y los colores neutrales en
+                                el exterior como en su interior, llamando la atención por su belleza y
+                                sencillez.
+                            </p>
+                        </div>
+
+                    </div>
+                    <br/>
+
                     <div className="row">
                         <div className="col-4">
                             <Carousel>
