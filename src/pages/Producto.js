@@ -1,14 +1,28 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 import FooterCompo from "../component/FooterCompo";
+import '../component/style/producto.css';
+import pdf from '../Images/PDF001.jpg';
 
 class Producto extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            prueba:1,
+        }
+    }
     render() {
         return (
             <React.Fragment>
                 <Navbar />
-                <div>
-
+                <div className="row">
+                    <div className="container">
+                        <div className="col-4">
+                            <a href="/producto/pdf" target="_blank">
+                            <img src={pdf} className="ImgProduct"/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <br/>
                 <FooterCompo />

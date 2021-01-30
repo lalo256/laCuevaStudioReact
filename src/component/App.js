@@ -5,6 +5,7 @@ import Nosotros from '../pages/Nosotros';
 import Proyecto from '../pages/Proyecto';
 import Producto from "../pages/Producto";
 import Contacto from '../pages/Contacto';
+import PDF from '../pages/PDF';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/proyecto" component={Proyecto} />
             <Route exact path="/producto" component={Producto} />
             <Route exact path="/contacto" component={Contacto} />
+            <Route exact path="/producto/pdf" component={PDF}/>
         </Switch>
       </BrowserRouter>
   );
