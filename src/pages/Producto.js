@@ -18,6 +18,7 @@ class Producto extends React.Component{
                 <div className="row">
                     <div className="container">
                         <div className="col-4">
+                            <h6 className="titleProduct1">Mini-guia</h6>
                             <a href="/producto/pdf" target="_blank">
                             <img src={pdf} className="ImgProduct"/>
                             </a>

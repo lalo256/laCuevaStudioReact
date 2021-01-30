@@ -8,6 +8,12 @@
         top: 1rem;
         bottom: 1rem;
     }
+    .titleProduct1{
+        font-family: Ailerons-Regular;
+        position: relative;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
 }
 /*pc*/
 @media screen and (min-width: 1000px){
@@ -18,5 +24,11 @@
         border: 1px solid gray;
         top: 1rem;
         bottom: 1rem;
+    }
+    .titleProduct1{
+        font-family: Ailerons-Regular;
+        position: relative;
+        padding-top: 2rem;
+        font-size: 2rem;
     }
 }
