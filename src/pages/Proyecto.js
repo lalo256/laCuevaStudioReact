@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../component/Navbar";
+
 import FooterCompo from "../component/FooterCompo";
 import P1_1 from '../Images/p0100.jpg';
 import P1_2 from '../Images/p0101.jpg';
@@ -17,59 +18,92 @@ import P4_1 from "../Images/p0400.jpeg";
 import P4_2 from "../Images/p0401.jpeg";
 import P6_1 from '../Images/p0600.jpeg';
 import P6_2 from '../Images/p0601.jpeg';
+import P7_1 from '../Images/p0700.jpeg';
+import P7_2 from '../Images/p0701.jpeg';
 
 class Proyecto extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            Page1 : true,
+            Page2 : false,
+            Page3 :false
+        }
+    }
+    operation1(){
+        this.setState({
+            Page1:!this.state.Page1,
+            Page2:false,
+            Page3:false
+        })
+    }
+    operation2(){
+        this.setState({
+            Page1:false,
+            Page2:!this.state.Page2,
+            Page3:false
+        })
+    }
+    operation3(){
+        this.setState({
+            Page1:false,
+            Page2:false,
+            Page3:!this.state.Page3
+        })
+    }
     render() {
-        return (
-            <React.Fragment>
-                <Navbar />
-                <div className="container proyect">
-                    <div className="row">
-                        <div className="col-4">
-                            <Carousel>
-                                <Carousel.Item interval={3000}>
-                                    <img className="imgcaruselP" src={P6_1} />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P6_2}/>
-                                </Carousel.Item>
-                            </Carousel>
-                            <h5 className="titleProject">Casa Purpura</h5>
-                        </div>
-                        <div className="col-8">
-                            <p className="descripcionProject1">
-                                Se compone de 3 volúmenes principales en su fachada, que le provee una estética única.
-                                La iluminación de los interiores enfatiza los grandes ventanales que coronan
-                                la estructura.Se rige por las líneas rectas y los colores neutrales en
-                                el exterior como en su interior, llamando la atención por su belleza y
-                                sencillez.
-                            </p>
-                        </div>
+        {/*pagina 1*/}
+        if(this.state.Page1 === true){
+            return (
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P6_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P6_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Purpura</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Se compone de 3 volúmenes principales en su fachada, que le provee una estética única.
+                                    La iluminación de los interiores enfatiza los grandes ventanales que coronan
+                                    la estructura.Se rige por las líneas rectas y los colores neutrales en
+                                    el exterior como en su interior, llamando la atención por su belleza y
+                                    sencillez.
+                                </p>
+                            </div>
 
-                    </div>
-                    <br/>
-
-                    <div className="row">
-                        <div className="col-4">
-                            <Carousel>
-                                <Carousel.Item interval={3000}>
-                                    <img className="imgcaruselP" src={P5_1} />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P5_2}/>
-                                </Carousel.Item>
-                            </Carousel>
-                            <h5 className="titleProject">Stanza Bianca</h5>
                         </div>
-                        <div className="col-8">
-                            <p className="descripcionProject1">
-                                Residencia que tiene como premisa de diseño, La limpieza visual.
-                                El  interiorismo  es elegante, sobrio, de diseño simple y acabados neutros .
-                            </p>
-                        </div>
+                        <br/>
 
-                    </div>
-                    <br/>
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P5_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P5_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Stanza Bianca</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Residencia que tiene como premisa de diseño, La limpieza visual.
+                                    El  interiorismo  es elegante, sobrio, de diseño simple y acabados neutros .
+                                </p>
+                            </div>
+
+                        </div>
+                        <br/>
 
                         <div className="row">
                             <div className="col-4">
@@ -94,82 +128,154 @@ class Proyecto extends React.Component{
                             </div>
 
                         </div>
-                        <br/>
-                    <div className="row">
-                        <div className="col-4">
-                            <Carousel>
-                                <Carousel.Item interval={3000}>
-                                    <img className="imgcaruselP" src={P1_1} />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P1_2}/>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P1_3}/>
-                                </Carousel.Item>
-                            </Carousel>
-                            <h5 className="titleProject">Casa Marte</h5>
-                        </div>
-                        <div className="col-8">
-                            <p className="descripcionProject1">
-                                Residencia diseñada bajo la premisa de construir una propiedad elegante de bajo costo, con una simpleza en sus formas.
-                                Consta con dos volúmenes intersectados y su simpleza la hace resaltar en sus tonos blancos.
-                            </p>
+                    </div>
+                    <div className="paginationDiv container">
+                        <ul className="pagination">
+                            <li className="page-item page-link active" onClick={() => this.operation1()}>1</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>2</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>Next</li>
+                        </ul>
+                    </div>
+                    <FooterCompo />
+                </React.Fragment>
+            )
+        }
+        {/*pagina 2*/}
+        if(this.state.Page2 === true){
+            return (
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P1_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P1_2}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P1_3}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Marte</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Residencia diseñada bajo la premisa de construir una propiedad elegante de bajo costo, con una simpleza en sus formas.
+                                    Consta con dos volúmenes intersectados y su simpleza la hace resaltar en sus tonos blancos.
+                                </p>
+                            </div>
+
                         </div>
 
-                    </div>
-                    <br/>
-                    <div className="row">
-                        <div className="col-4">
-                            <Carousel>
-                                <Carousel.Item interval={3000}>
-                                    <img className="imgcaruselP" src={P2_1} />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P2_2}/>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P2_3}/>
-                                </Carousel.Item>
-                            </Carousel>
-                            <h5 className="titleProject">Casa Matiz</h5>
-                        </div>
-                        <div className="col-8">
-                            <p className="descripcionProject1">
-                                Residencia que consta de 3 volúmenes invisibles a la vista,
-                                resaltando sus tonalidades en grises, negros y blancos, generando un
-                                espacio interior armónico y confortable.
-                            </p>
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P2_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P2_2}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P2_3}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Matiz</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Residencia que consta de 3 volúmenes invisibles a la vista,
+                                    resaltando sus tonalidades en grises, negros y blancos, generando un
+                                    espacio interior armónico y confortable.
+                                </p>
+                            </div>
+
                         </div>
 
-                    </div>
-                    <div className="row">
-                        <div className="col-4">
-                            <Carousel>
-                                <Carousel.Item interval={3000}>
-                                    <img className="imgcaruselP" src={P3_1} />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img className="imgcaruselP" src={P3_2}/>
-                                </Carousel.Item>
-                            </Carousel>
-                            <h5 className="titleProject">Casa Spring</h5>
-                        </div>
-                        <div className="col-8">
-                            <p className="descripcionProject1">
-                                Residencia para vacaciones, con un estilo moderno y
-                                vanguardista, consta de solo una planta la cual facilita su construcción.
-                                El blanco en su  fachada hace que el interior sea mas fresco de lo
-                                habitual.
-                            </p>
-                        </div>
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P3_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P3_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Spring</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Residencia para vacaciones, con un estilo moderno y
+                                    vanguardista, consta de solo una planta la cual facilita su construcción.
+                                    El blanco en su  fachada hace que el interior sea mas fresco de lo
+                                    habitual.
+                                </p>
+                            </div>
 
+                        </div>
+                        <div className="paginationDiv container">
+                            <ul className="pagination">
+                                <li className="page-item page-link text-danger"onClick={() => this.operation1()}>Previous</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
+                                <li className="page-item page-link active" onClick={() => this.operation2()}>2</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>Next</li>
+                            </ul>
+                        </div>
+                        <FooterCompo />
+                        </div>
+                </React.Fragment>
+            )
+        }
+        {/*pagina 3*/}
+        if(this.state.Page3 === true){
+            return(
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P7_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P7_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Ciotola</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Una vivienda que se caracteriza por un diseño con menos elementos y que sus formas son
+                                    sencillas  utilizando materiales que buscan la simplicidad en los colores, pocas texturas y
+                                    accesorios. Cada espacio proyecta, limpieza, amplitud y sencillez para lo que se
+                                    implementan materiales ecológicos que inspiran el regreso a lo natural, sin
+                                    olvidar elementos que conecten con la modernidad
+                                </p>
+                            </div>
+
+                        </div>
+                        <div className="paginationDiv container">
+                            <ul className="pagination">
+                                <li className="page-item page-link text-danger"onClick={() => this.operation2()}>Previous</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation2()}>2</li>
+                                <li className="page-item page-link active" onClick={() => this.operation3()}>3</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <br/>
-                <FooterCompo />
-            </React.Fragment>
-        )
+                    <FooterCompo />
+                </React.Fragment>
+            )
+        }
     }
-}
+
+    }
+
 export default Proyecto;
