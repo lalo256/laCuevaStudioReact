@@ -20,6 +20,8 @@ import P6_1 from '../Images/p0600.jpeg';
 import P6_2 from '../Images/p0601.jpeg';
 import P7_1 from '../Images/p0700.jpeg';
 import P7_2 from '../Images/p0701.jpeg';
+import P8_1 from '../Images/p0800.jpeg';
+import P8_2 from '../Images/p0801.jpeg';
 
 class Proyecto extends React.Component{
     constructor(){
@@ -58,6 +60,7 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
+                        {/*proyecto 1*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -83,6 +86,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
+                        {/*proyecto2*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -105,6 +109,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
+                        {/*proyecto3*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -147,6 +152,57 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
+                        {/*proyecto4*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P7_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P7_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Ciotola</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Una vivienda que se caracteriza por un diseño con menos elementos y que sus formas son
+                                    sencillas  utilizando materiales que buscan la simplicidad en los colores, pocas texturas y
+                                    accesorios. Cada espacio proyecta, limpieza, amplitud y sencillez para lo que se
+                                    implementan materiales ecológicos que inspiran el regreso a lo natural, sin
+                                    olvidar elementos que conecten con la modernidad
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/*proyecto5*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P8_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P8_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa di contrasto</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Una casa cuyo revestimiento de madera le otorga un contraste muy
+                                    peculiar en la fachada emulando la naturaleza, que incorpora la
+                                    modernidad en su interior. Los tonos neutros, resaltando el gris y
+                                    negro visten cada rincon de esta casa, dotandola de una elegancia y
+                                    naturalidad.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/*proyecto6*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -171,6 +227,27 @@ class Proyecto extends React.Component{
 
                         </div>
 
+                        <div className="paginationDiv container">
+                            <ul className="pagination">
+                                <li className="page-item page-link text-danger"onClick={() => this.operation1()}>Previous</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
+                                <li className="page-item page-link active" onClick={() => this.operation2()}>2</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>Next</li>
+                            </ul>
+                        </div>
+                        <FooterCompo />
+                        </div>
+                </React.Fragment>
+            )
+        }
+        {/*pagina 3*/}
+        if(this.state.Page3 === true){
+            return(
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+                        {/*proyecto7*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -196,6 +273,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
+                        {/*proyecto8*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -218,49 +296,7 @@ class Proyecto extends React.Component{
                             </div>
 
                         </div>
-                        <div className="paginationDiv container">
-                            <ul className="pagination">
-                                <li className="page-item page-link text-danger"onClick={() => this.operation1()}>Previous</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
-                                <li className="page-item page-link active" onClick={() => this.operation2()}>2</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>Next</li>
-                            </ul>
-                        </div>
-                        <FooterCompo />
-                        </div>
-                </React.Fragment>
-            )
-        }
-        {/*pagina 3*/}
-        if(this.state.Page3 === true){
-            return(
-                <React.Fragment>
-                    <Navbar />
-                    <div className="container proyect">
-                        <div className="row">
-                            <div className="col-4">
-                                <Carousel>
-                                    <Carousel.Item interval={3000}>
-                                        <img className="imgcaruselP" src={P7_1} />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img className="imgcaruselP" src={P7_2}/>
-                                    </Carousel.Item>
-                                </Carousel>
-                                <h5 className="titleProject">Casa Ciotola</h5>
-                            </div>
-                            <div className="col-8">
-                                <p className="descripcionProject1">
-                                    Una vivienda que se caracteriza por un diseño con menos elementos y que sus formas son
-                                    sencillas  utilizando materiales que buscan la simplicidad en los colores, pocas texturas y
-                                    accesorios. Cada espacio proyecta, limpieza, amplitud y sencillez para lo que se
-                                    implementan materiales ecológicos que inspiran el regreso a lo natural, sin
-                                    olvidar elementos que conecten con la modernidad
-                                </p>
-                            </div>
 
-                        </div>
                         <div className="paginationDiv container">
                             <ul className="pagination">
                                 <li className="page-item page-link text-danger"onClick={() => this.operation2()}>Previous</li>
