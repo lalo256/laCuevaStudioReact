@@ -22,6 +22,9 @@ import P7_1 from '../Images/p0700.jpeg';
 import P7_2 from '../Images/p0701.jpeg';
 import P8_1 from '../Images/p0800.jpeg';
 import P8_2 from '../Images/p0801.jpeg';
+import P9_1 from '../Images/p0900.jpeg';
+import P9_2 from '../Images/p0901.jpeg';
+import P9_3 from '../Images/p0902.jpeg';
 
 class Proyecto extends React.Component{
     constructor(){
@@ -65,6 +68,34 @@ class Proyecto extends React.Component{
                             <div className="col-4">
                                 <Carousel>
                                     <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P9_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P9_2}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P9_3}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa da luce</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    La casa cuenta con una limpieza visual en sus formas sustrayendo bloques de sus fachadas.
+                                    El interiorismo es sobrio y en colores neutros, dejando que la luz natural entre y matice el espacio, con una doble altura en cocina-comedor.
+                                    Su patio exterior se diseño para la convivencia y el ocio.
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <br/>
+
+                        {/*proyecto 2*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
                                         <img className="imgcaruselP" src={P6_1} />
                                     </Carousel.Item>
                                     <Carousel.Item>
@@ -86,7 +117,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto2*/}
+                        {/*proyecto 3*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -109,7 +140,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto3*/}
+                        {/*proyecto 4*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -152,7 +183,7 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
-                        {/*proyecto4*/}
+                        {/*proyecto5*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -177,7 +208,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto5*/}
+                        {/*proyecto 6*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -202,7 +233,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto6*/}
+                        {/*proyecto 7*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -247,7 +278,7 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
-                        {/*proyecto7*/}
+                        {/*proyecto 8*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -273,7 +304,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto8*/}
+                        {/*proyecto 9*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
