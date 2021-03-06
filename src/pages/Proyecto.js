@@ -25,6 +25,9 @@ import P8_2 from '../Images/p0801.jpeg';
 import P9_1 from '../Images/p0900.jpeg';
 import P9_2 from '../Images/p0901.jpeg';
 import P9_3 from '../Images/p0902.jpeg';
+import P10_1 from '../Images/p01000.jpeg';
+import P10_2 from '../Images/p01001.jpeg';
+import P10_3 from '../Images/p01002.jpeg';
 
 class Proyecto extends React.Component{
     constructor(){
@@ -63,7 +66,35 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
+
                         {/*proyecto 1*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P10_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P10_2}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P10_3}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa Piccola</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    una casa simple en sus formas, lineas y colores. Los espacios interiores con vista al
+                                    exterior que en sus colores, texturas y materiales crean un ambiente calido.
+                                    Generando una sutil iluminación y  con la fosforescencia de la piscina que proyecta los interiores,
+                                    crea una atmósferas de luz y paz.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/*proyecto 2*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -91,7 +122,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto 2*/}
+                        {/*proyecto 3*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -117,7 +148,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto 3*/}
+                        {/*proyecto 4*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -140,7 +171,28 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto 4*/}
+
+                    </div>
+                    <div className="paginationDiv container">
+                        <ul className="pagination">
+                            <li className="page-item page-link active" onClick={() => this.operation1()}>1</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>2</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
+                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>Next</li>
+                        </ul>
+                    </div>
+                    <FooterCompo />
+                </React.Fragment>
+            )
+        }
+        {/*pagina 2*/}
+        if(this.state.Page2 === true){
+            return (
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+
+                        {/*proyecto 5*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -164,26 +216,8 @@ class Proyecto extends React.Component{
                             </div>
 
                         </div>
-                    </div>
-                    <div className="paginationDiv container">
-                        <ul className="pagination">
-                            <li className="page-item page-link active" onClick={() => this.operation1()}>1</li>
-                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>2</li>
-                            <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
-                            <li className="page-item page-link text-danger" onClick={() => this.operation2()}>Next</li>
-                        </ul>
-                    </div>
-                    <FooterCompo />
-                </React.Fragment>
-            )
-        }
-        {/*pagina 2*/}
-        if(this.state.Page2 === true){
-            return (
-                <React.Fragment>
-                    <Navbar />
-                    <div className="container proyect">
-                        {/*proyecto5*/}
+
+                        {/*proyecto6*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -208,7 +242,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 6*/}
+                        {/*proyecto 7*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -233,7 +267,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 7*/}
+                        {/*proyecto 8*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -278,7 +312,7 @@ class Proyecto extends React.Component{
                 <React.Fragment>
                     <Navbar />
                     <div className="container proyect">
-                        {/*proyecto 8*/}
+                        {/*proyecto 9*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -304,7 +338,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 9*/}
+                        {/*proyecto 10*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
