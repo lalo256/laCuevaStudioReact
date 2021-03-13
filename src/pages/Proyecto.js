@@ -28,6 +28,11 @@ import P9_3 from '../Images/p0902.jpeg';
 import P10_1 from '../Images/p01000.jpeg';
 import P10_2 from '../Images/p01001.jpeg';
 import P10_3 from '../Images/p01002.jpeg';
+import P11_1 from '../Images/p01100.jpeg';
+import P11_2 from '../Images/p01101.jpeg';
+import P11_3 from '../Images/p01102.jpeg';
+
+
 
 class Proyecto extends React.Component{
     constructor(){
@@ -38,6 +43,7 @@ class Proyecto extends React.Component{
             Page3 :false
         }
     }
+
     operation1(){
         this.setState({
             Page1:!this.state.Page1,
@@ -67,7 +73,34 @@ class Proyecto extends React.Component{
                     <Navbar />
                     <div className="container proyect">
 
+
                         {/*proyecto 1*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P11_1}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P11_2}/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P11_3}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Casa T</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Casa habitación para una familia pequeña, donde su terreno a desnivel, permite que su fachada principal sea en nivel de calle y el patio interior a un nivel abajo, junto con las habitaciones.
+                                    Enmarcando un volado en el nivel de calle que genera una vista en 3D del paisaje.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/*proyecto 2*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -94,7 +127,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 2*/}
+                        {/*proyecto 3*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -122,7 +155,7 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto 3*/}
+                        {/*proyecto 4*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -148,27 +181,8 @@ class Proyecto extends React.Component{
                         </div>
                         <br/>
 
-                        {/*proyecto 4*/}
-                        <div className="row">
-                            <div className="col-4">
-                                <Carousel>
-                                    <Carousel.Item interval={3000}>
-                                        <img className="imgcaruselP" src={P5_1} />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img className="imgcaruselP" src={P5_2}/>
-                                    </Carousel.Item>
-                                </Carousel>
-                                <h5 className="titleProject">Stanza Bianca</h5>
-                            </div>
-                            <div className="col-8">
-                                <p className="descripcionProject1">
-                                    Residencia que tiene como premisa de diseño, La limpieza visual.
-                                    El  interiorismo  es elegante, sobrio, de diseño simple y acabados neutros .
-                                </p>
-                            </div>
 
-                        </div>
+
                         <br/>
 
 
@@ -192,7 +206,30 @@ class Proyecto extends React.Component{
                     <Navbar />
                     <div className="container proyect">
 
+
                         {/*proyecto 5*/}
+                        <div className="row">
+                            <div className="col-4">
+                                <Carousel>
+                                    <Carousel.Item interval={3000}>
+                                        <img className="imgcaruselP" src={P5_1} />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="imgcaruselP" src={P5_2}/>
+                                    </Carousel.Item>
+                                </Carousel>
+                                <h5 className="titleProject">Stanza Bianca</h5>
+                            </div>
+                            <div className="col-8">
+                                <p className="descripcionProject1">
+                                    Residencia que tiene como premisa de diseño, La limpieza visual.
+                                    El  interiorismo  es elegante, sobrio, de diseño simple y acabados neutros .
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/*proyecto 6*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -217,7 +254,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto6*/}
+                        {/*proyecto7*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -242,7 +279,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 7*/}
+                        {/*proyecto 8*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -267,7 +304,31 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 8*/}
+
+
+                        <div className="paginationDiv container">
+                            <ul className="pagination">
+                                <li className="page-item page-link text-danger"onClick={() => this.operation1()}>Previous</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
+                                <li className="page-item page-link active" onClick={() => this.operation2()}>2</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
+                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>Next</li>
+                            </ul>
+                        </div>
+                        <FooterCompo />
+                        </div>
+                </React.Fragment>
+            )
+        }
+        {/*pagina 3*/}
+        if(this.state.Page3 === true){
+            return(
+                <React.Fragment>
+                    <Navbar />
+                    <div className="container proyect">
+
+
+                        {/*proyecto 9*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -292,27 +353,8 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        <div className="paginationDiv container">
-                            <ul className="pagination">
-                                <li className="page-item page-link text-danger"onClick={() => this.operation1()}>Previous</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation1()}>1</li>
-                                <li className="page-item page-link active" onClick={() => this.operation2()}>2</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>3</li>
-                                <li className="page-item page-link text-danger" onClick={() => this.operation3()}>Next</li>
-                            </ul>
-                        </div>
-                        <FooterCompo />
-                        </div>
-                </React.Fragment>
-            )
-        }
-        {/*pagina 3*/}
-        if(this.state.Page3 === true){
-            return(
-                <React.Fragment>
-                    <Navbar />
-                    <div className="container proyect">
-                        {/*proyecto 9*/}
+
+                        {/*proyecto 10*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
@@ -338,7 +380,7 @@ class Proyecto extends React.Component{
 
                         </div>
 
-                        {/*proyecto 10*/}
+                        {/*proyecto 11*/}
                         <div className="row">
                             <div className="col-4">
                                 <Carousel>
