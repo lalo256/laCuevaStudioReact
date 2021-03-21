@@ -8,11 +8,11 @@ import Conta3 from '../Images/2453.1.jpeg';
 import logo from '../Images/1451.jpg';
 import '../component/style/Contacto.css';
 
-class Contacto extends React.Component{
+class Contacto extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state ={
+        this.state = {
             nombre: '',
             email: '',
             telefono: '',
@@ -111,7 +111,7 @@ class Contacto extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <Navbar />
+                <Navbar/>
                 <br/>
                 <div>
                     <div className="container">
@@ -129,89 +129,89 @@ class Contacto extends React.Component{
                                             <h1 className="titleContac text-danger">Contáctanos</h1>
 
                                             <div className="col-6 col-sm-6">
-                                            <table className="tablaContacto table-borderless">
-                                                <tr>
-                                                    <td>nombre: </td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            name="nombre"
-                                                            value={this.state.value}
-                                                            onChange={this.handleChangename}
-                                                        />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td Style="padding:10px;"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Email: </td>
-                                                    <td>
-                                                        <input
-                                                            type="email"
-                                                            name="email"
-                                                            value={this.state.value}
-                                                            onChange={this.handleChangeemail}
-                                                        />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td Style="padding:10px;"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Telefono:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            name="fon"
-                                                            value={this.state.value}
-                                                            onChange={this.handleChangefon}
-                                                        />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td Style="padding:10px;"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Asunto:</td>
-                                                    <td>
-                                                        <input
-                                                            type="text"
-                                                            name="asunto"
-                                                            value={this.state.value}
-                                                            onChange={this.handleChangeasunto}
-                                                        />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td Style="padding:10px;"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Mensaje:</td>
-                                                    <td>
+                                                <table className="tablaContacto table-borderless">
+                                                    <tr>
+                                                        <td>Nombre:</td>
+                                                        <td>
+                                                            <input
+                                                                type="text"
+                                                                name="nombre"
+                                                                value={this.state.value}
+                                                                onChange={this.handleChangename}
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td Style="padding:10px;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email:</td>
+                                                        <td>
+                                                            <input
+                                                                type="email"
+                                                                name="email"
+                                                                value={this.state.value}
+                                                                onChange={this.handleChangeemail}
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td Style="padding:10px;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Telefono:</td>
+                                                        <td>
+                                                            <input
+                                                                type="text"
+                                                                name="fon"
+                                                                value={this.state.value}
+                                                                onChange={this.handleChangefon}
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td Style="padding:10px;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Asunto:</td>
+                                                        <td>
+                                                            <input
+                                                                type="text"
+                                                                name="asunto"
+                                                                value={this.state.value}
+                                                                onChange={this.handleChangeasunto}
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td Style="padding:10px;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mensaje:</td>
+                                                        <td>
                                                         <textarea
                                                             name="mensaje"
                                                             value={this.state.value}
                                                             onChange={this.handleChangemensaje}
                                                         />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td Style="padding:10px;"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td>
-                                                        <input
-                                                            type="submit"
-                                                            value="Enviar"
-                                                            className="btn btn-outline-dark"
-                                                        />
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td Style="padding:10px;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <input
+                                                                type="submit"
+                                                                value="Enviar"
+                                                                className="btn btn-outline-dark"
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
+                                        </div>
 
                                     </form>
                                 </div>
@@ -222,20 +222,26 @@ class Contacto extends React.Component{
                                             <div>
                                                 <h4 className="titleContac text-danger">Contáctanos</h4>
                                                 <table>
-                                                    <tr><td className="contactFont">nombre:</td></tr>
+                                                    <tr>
+                                                        <td className="contactFont">Nombre:</td>
+                                                    </tr>
                                                 </table>
                                                 <table>
-                                                    <tr><td> <input
-                                                        type="text"
-                                                        name="nombre"
-                                                        size="13"
-                                                        className="inputStyleSm"
-                                                        value={this.state.value}
-                                                        onChange={this.handleChangenameM}
-                                                    /></td></tr>
+                                                    <tr>
+                                                        <td><input
+                                                            type="text"
+                                                            name="nombre"
+                                                            size="13"
+                                                            className="inputStyleSm"
+                                                            value={this.state.value}
+                                                            onChange={this.handleChangenameM}
+                                                        /></td>
+                                                    </tr>
                                                 </table>
                                                 <table>
-                                                    <tr><td>Email *</td></tr>
+                                                    <tr>
+                                                        <td>Email *</td>
+                                                    </tr>
                                                 </table>
                                                 <table>
                                                     <tr>
@@ -268,7 +274,9 @@ class Contacto extends React.Component{
                                                     </tr>
                                                 </table>
                                                 <table>
-                                                    <tr><td>Asunto</td></tr>
+                                                    <tr>
+                                                        <td>Asunto</td>
+                                                    </tr>
                                                 </table>
                                                 <table>
                                                     <tr>
@@ -284,17 +292,19 @@ class Contacto extends React.Component{
                                                     </tr>
                                                 </table>
                                                 <table>
-                                                    <tr><td>Mensaje</td></tr>
+                                                    <tr>
+                                                        <td>Mensaje</td>
+                                                    </tr>
                                                 </table>
                                                 <table>
                                                     <tr>
                                                         <td>
-                                                        <input
-                                                            name="mensaje"
-                                                            size = "13"
-                                                            value={this.state.value}
-                                                            onChange={this.handleChangemensajeM}
-                                                        />
+                                                            <input
+                                                                name="mensaje"
+                                                                size="13"
+                                                                value={this.state.value}
+                                                                onChange={this.handleChangemensajeM}
+                                                            />
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -321,9 +331,10 @@ class Contacto extends React.Component{
                     </div>
                 </div>
                 <br/>
-                <FooterCompo />
+                <FooterCompo/>
             </React.Fragment>
         )
     }
 }
+
 export default Contacto;
