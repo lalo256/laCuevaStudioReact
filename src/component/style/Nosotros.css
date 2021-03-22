@@ -24,13 +24,21 @@
         color: gray;
         font-size: 35px;
     }
+    .imgNosoM{
+        position: relative;
+        width: 20rem;
+        height: 35rem;
+        padding-top: 10px;
+        border: .5px solid gray;
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
    .imgNosoM{
-        width: 4rem;
-       height: 35rem;
+       position: relative;
+        width: 15rem;
+       height: 20rem;
        padding-top: 10px;
    }
    .fontM{
