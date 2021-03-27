@@ -25,6 +25,9 @@ class Navbar extends React.Component{
                                     <a className="nav-link text-danger" href="/nosotros">NOSOTROS</a>
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link text-danger" href="/servicios">SERVICIOS</a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link text-danger" href="/proyecto">PROYECTOS</a>
                                 </li>
                                 <li className="nav-item">

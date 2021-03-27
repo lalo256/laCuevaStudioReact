@@ -2,10 +2,6 @@ import React from "react";
 import emailjs from "emailjs-com";
 import Navbar from "../component/Navbar";
 import FooterCompo from "../component/FooterCompo";
-import Conta1 from '../Images/2451.jpeg';
-import Conta2 from '../Images/2452.1.jpeg';
-import Conta3 from '../Images/2453.1.jpeg';
-import logo from '../Images/1451.jpg';
 import '../component/style/Contacto.css';
 
 class Contacto extends React.Component {
@@ -117,10 +113,9 @@ class Contacto extends React.Component {
                     <div className="container">
                         <div className="container-fluid">
                             <div className="row">
-                                <div className="col-6">
-                                    <img className="imgContacto imgContactoSm" src={Conta1}/>
-                                    <img className="imgContacto imgContactoSm" src={Conta2}/>
-                                    <img className="imgContacto imgContactoSm" src={Conta3}/>
+                                <div className="col-6 contactoIzq ocultarPc">
+                                    <h5>Tel Contacto: 55 85 09 18 87</h5>
+                                    <h5>lacuevastudio.arq@gmail.com</h5>
                                 </div>
 
                                 <div className="col-5 container-fluid ocultar-divs">
@@ -329,6 +324,10 @@ class Contacto extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="contactoIzq ocultarMovil">
+                    <h5>Tel Contacto: 55 85 09 18 87</h5>
+                    <h5>lacuevastudio.arq@gmail.com</h5>
                 </div>
                 <br/>
                 <FooterCompo/>

@@ -1,13 +1,28 @@
-.instaImg{
+.instaImg {
     width: 3rem;
     height: 3rem;
-    padding: 5px;
+    padding: 8px;
 }
-.fontFooter{
+
+.fontFooter {
     color: gray;
 }
 
-.correo{
-    color: #495057;
+
+.divFooterPrincipal {
+    padding-top: 2rem;
+}
+
+/*movil*/
+@media only screen and (max-width: 768px) {
+
+}
+
+/*pc*/
+@media only screen and (min-width: 768px) {
+    .Text1 {
+        position: absolute;
+        right: 1rem;
+    }
 
 }

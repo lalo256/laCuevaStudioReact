@@ -1,35 +1,57 @@
-.imgContacto{
+.imgContacto {
     width: 8rem;
     height: 45rem;
 }
-.window{
+
+.window {
     background-color: lightsteelblue;
 }
 
+.contactoIzq {
+    border-right: 1px solid gray;
+    font-family: Ailerons-Regular;
+}
+
+
 @media only screen and (max-width: 768px) {
-    .imgContactoSm{
+    .imgContactoSm {
         width: 2.3rem;
         height: 23rem;
     }
+
+    .contactoIzq {
+        font-family: Ailerons-Regular;
+        padding-top: 3rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
-    .ocultar-divs{
+    .ocultar-divs {
         display: none;
+    }
+
+    .contactoIzq {
+        font-family: Ailerons-Regular;
+        padding-top: 3rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .ocultar-div{
+    .ocultar-div {
         display: none;
     }
-    .formContactoSm{
+
+    .formContactoSm {
         font-size: .5rem;
     }
-    .titleSm{
+
+    .titleSm {
         font-size: 2px;
     }
-    .contactFont{
+
+    .contactFont {
 
     }
+
 }

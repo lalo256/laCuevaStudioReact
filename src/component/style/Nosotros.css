@@ -1,50 +1,94 @@
-.presentacinTitulo{
+.presentacinTitulo {
     color: red;
     font-family: arial;
     padding: 10px;
 }
-.nosotrosPresentacion{
-    color:gray;
+
+.nosotrosPresentacion {
+    color: gray;
     font-family: arial;
-    pading:15px;
+    pading: 15px;
 }
-.lema{
-    color:gray;
+
+.lema {
+    color: gray;
     text-align: center;
     padding: 15px;
 }
-.botonesNombre{
+
+.botonesNombre {
     font-family: Ailerons-Regular;
 
 }
+
 @media only screen and (min-width: 768px) {
-    .descripcionNoso{
+    .descripcionNoso {
         padding: 30px;
         font-family: arial;
         color: gray;
         font-size: 35px;
     }
-    .imgNosoM{
+
+    .imgNosoM {
         position: relative;
         width: 20rem;
         height: 35rem;
         padding-top: 10px;
         border: .5px solid gray;
     }
+
+    .Principales {
+        border-top: 2px solid gray;
+    }
+
+    .div1 {
+        padding-top: 2rem;
+    }
+
+    .imgPrincipal {
+        width: 70%;
+    }
+
+    .ocultarMovil {
+        display: none;
+    }
 }
 
-
+/*movil*/
 @media only screen and (max-width: 768px) {
-   .imgNosoM{
-       position: relative;
+    .imgNosoM {
+        position: relative;
         width: 15rem;
-       height: 20rem;
-       padding-top: 10px;
-   }
-   .fontM{
-    font-size: 18px;
-       padding: 30px;
-       font-family: arial;
-       color: gray;
-   }
+        height: 20rem;
+        padding-top: 10px;
+    }
+
+    .fontM {
+        font-size: 18px;
+        padding: 30px;
+        font-family: arial;
+        color: gray;
+    }
+
+    .Principales {
+        border-top: 2px solid gray;
+    }
+
+    .div1 {
+        padding-top: 1rem;
+    }
+
+    .imgPrincipal {
+        width: 40%;
+        padding-top: 5px;
+    }
+
+    h3 {
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .ocultarPc {
+        display: none;
+    }
 }

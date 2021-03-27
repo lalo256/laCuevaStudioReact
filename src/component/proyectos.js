@@ -22,14 +22,12 @@ import P7_1 from "../Images/p0700.jpeg";
 import P7_2 from "../Images/p0701.jpeg";
 import P8_1 from "../Images/p0800.jpeg";
 import P8_2 from "../Images/p0801.jpeg";
-import P1_1 from "../Images/p0100.jpg";
-import P1_2 from "../Images/p0101.jpg";
-import P1_3 from "../Images/p0102.jpg";
 import P2_1 from "../Images/p0200.jpg";
 import P2_2 from "../Images/p0201.jpg";
 import P2_3 from "../Images/p0202.jpg";
-import P3_1 from "../Images/p0300.jpeg";
-import P3_2 from "../Images/p0301.jpeg";
+import P13_1 from "../Images/p01300.jpeg";
+import P13_2 from "../Images/p01301.jpeg";
+import P13_3 from "../Images/p01302.jpeg";
 
 
 export function Casa_T() {
@@ -344,10 +342,40 @@ export function Casa_Della_Natura() {
     );
 }
 
-export function segunda11() {
+export function Casa_Giardino_Pensile() {
     return (
         <React.Fragment>
+            <div className="row">
+                <div className="col-4">
+                    <Carousel>
+                        <Carousel.Item interval={3000}>
+                            <img className="imgcaruselP" src={P13_1}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P13_2}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P13_3}/>
+                        </Carousel.Item>
+                    </Carousel>
+                    <h5 className="titleProject">Casa Giardino Pensile</h5>
+                </div>
+                <div className="col-8">
+                    <p className="descripcionProject1">
+                        Una casa de dos pisos bajo una paleta monocromática que unifica sus ambientes haciendo de todos
+                        ellos un entorno de calma, sencillez y tranquilidad.
 
+                        En su fachada sobresale un volumen que te invita a entrar al hogar con su forma sencilla y
+                        conservando su tonalidad en blanco.
+
+                        En su patio central se localiza una escalera que funde como eje central de la casa que te lleva
+                        al roof Garden, que cuenta con un ambiente amplio y cómodo que genera la piscina y una área de
+                        fogata.
+
+                    </p>
+                </div>
+
+            </div>
         </React.Fragment>
     );
 }
