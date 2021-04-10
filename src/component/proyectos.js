@@ -28,6 +28,11 @@ import P2_3 from "../Images/p0202.jpg";
 import P13_1 from "../Images/p01300.jpeg";
 import P13_2 from "../Images/p01301.jpeg";
 import P13_3 from "../Images/p01302.jpeg";
+import P14_1 from "../Images/p01400.jpeg";
+import P14_2 from "../Images/p01401.jpeg";
+import P14_3 from "../Images/p01402.jpeg";
+import P14_4 from "../Images/p01403.jpeg";
+import P14_5 from "../Images/p01404.jpeg";
 
 
 export function Casa_T() {
@@ -371,6 +376,51 @@ export function Casa_Giardino_Pensile() {
                         En su patio central se localiza una escalera que funde como eje central de la casa que te lleva
                         al roof Garden, que cuenta con un ambiente amplio y cómodo que genera la piscina y una área de
                         fogata.
+
+                    </p>
+                </div>
+
+            </div>
+        </React.Fragment>
+    );
+}
+
+
+export function Casa_Sociale() {
+    return (
+        <React.Fragment>
+            <div className="row">
+                <div className="col-4">
+                    <Carousel>
+                        <Carousel.Item interval={3000}>
+                            <img className="imgcaruselP" src={P14_1}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P14_2}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P14_3}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P14_4}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P14_5}/>
+                        </Carousel.Item>
+                    </Carousel>
+                    <h5 className="titleProject">Casa Sociale</h5>
+                </div>
+                <div className="col-8">
+                    <p className="descripcionProject1">
+                        Una vivienda de interés social con una superficie total de 95 m2, creada para evocar la
+                        sencilles , la mínima superficie habitable.
+                        varios muebles y closet´s , es del mismo material (concreto) que el de la vivienda al igual que
+                        sus muros, sellados para evitar la filtración de humedad.
+
+                        Los materiales se eligieron por su disponibilidad y bajo costo. Se usaron elementos cuyo sistema
+                        constructivo y características les brindan resistencia sísmica y confort térmico a las
+                        viviendas.
+
 
                     </p>
                 </div>

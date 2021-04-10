@@ -7,7 +7,7 @@ import {
     Casa_Ciotola,
     Casa_da_luce, Casa_Della_Natura, Casa_di_contrasto, Casa_Giardino_Pensile, Casa_Matiz,
     Casa_Piccola,
-    Casa_Purpura,
+    Casa_Purpura, Casa_Sociale,
     Casa_T,
     Puntos_Altos,
     Stanza_Bianca
@@ -57,10 +57,11 @@ class Proyecto extends React.Component {
                     <Navbar/>
                     <div className="container proyect">
 
+                        {Casa_Sociale()}
                         {Casa_Giardino_Pensile()}
                         {Casa_Della_Natura()}
                         {Casa_T()}
-                        {Casa_Piccola()}
+
 
                     </div>
                     <div className="paginationDiv container">
@@ -83,10 +84,11 @@ class Proyecto extends React.Component {
                     <Navbar/>
                     <div className="container proyect">
 
+                        {Casa_Piccola()}
                         {Casa_da_luce()}
                         {Casa_Purpura()}
                         {Stanza_Bianca()}
-                        {Puntos_Altos()}
+
 
                         <div className="paginationDiv container">
                             <ul className="pagination">
@@ -113,6 +115,7 @@ class Proyecto extends React.Component {
                     <Navbar/>
                     <div className="container proyect">
 
+                        {Puntos_Altos()}
                         {Casa_Ciotola()}
                         {Casa_di_contrasto()}
                         {Casa_Matiz()}
