@@ -22,17 +22,16 @@ import P7_1 from "../Images/p0700.jpeg";
 import P7_2 from "../Images/p0701.jpeg";
 import P8_1 from "../Images/p0800.jpeg";
 import P8_2 from "../Images/p0801.jpeg";
-import P2_1 from "../Images/p0200.jpg";
-import P2_2 from "../Images/p0201.jpg";
-import P2_3 from "../Images/p0202.jpg";
-import P13_1 from "../Images/p01300.jpeg";
-import P13_2 from "../Images/p01301.jpeg";
-import P13_3 from "../Images/p01302.jpeg";
 import P14_1 from "../Images/p01400.jpeg";
 import P14_2 from "../Images/p01401.jpeg";
 import P14_3 from "../Images/p01402.jpeg";
 import P14_4 from "../Images/p01403.jpeg";
 import P14_5 from "../Images/p01404.jpeg";
+import P15_1 from "../Images/p01500.jpeg";
+import P15_2 from "../Images/p01501.jpeg";
+import P15_3 from "../Images/p01502.jpeg";
+import P15_4 from "../Images/p01503.jpeg";
+import P15_5 from "../Images/p01504.jpeg";
 
 
 export function Casa_T() {
@@ -281,37 +280,6 @@ export function Casa_di_contrasto() {
     );
 }
 
-export function Casa_Matiz() {
-    return (
-        <React.Fragment>
-            <div className="row">
-                <div className="col-4">
-                    <Carousel>
-                        <Carousel.Item interval={3000}>
-                            <img className="imgcaruselP" src={P2_1}/>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcaruselP" src={P2_2}/>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcaruselP" src={P2_3}/>
-                        </Carousel.Item>
-                    </Carousel>
-                    <h5 className="titleProject">Casa Matiz</h5>
-                </div>
-                <div className="col-8">
-                    <p className="descripcionProject1">
-                        Residencia que consta de 3 volúmenes invisibles a la vista,
-                        resaltando sus tonalidades en grises, negros y blancos, generando un
-                        espacio interior armónico y confortable.
-                    </p>
-                </div>
-
-            </div>
-        </React.Fragment>
-    );
-}
-
 export function Casa_Della_Natura() {
     return (
         <React.Fragment>
@@ -347,45 +315,6 @@ export function Casa_Della_Natura() {
     );
 }
 
-export function Casa_Giardino_Pensile() {
-    return (
-        <React.Fragment>
-            <div className="row">
-                <div className="col-4">
-                    <Carousel>
-                        <Carousel.Item interval={3000}>
-                            <img className="imgcaruselP" src={P13_1}/>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcaruselP" src={P13_2}/>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcaruselP" src={P13_3}/>
-                        </Carousel.Item>
-                    </Carousel>
-                    <h5 className="titleProject">Casa Giardino Pensile</h5>
-                </div>
-                <div className="col-8">
-                    <p className="descripcionProject1">
-                        Una casa de dos pisos bajo una paleta monocromática que unifica sus ambientes haciendo de todos
-                        ellos un entorno de calma, sencillez y tranquilidad.
-
-                        En su fachada sobresale un volumen que te invita a entrar al hogar con su forma sencilla y
-                        conservando su tonalidad en blanco.
-
-                        En su patio central se localiza una escalera que funde como eje central de la casa que te lleva
-                        al roof Garden, que cuenta con un ambiente amplio y cómodo que genera la piscina y una área de
-                        fogata.
-
-                    </p>
-                </div>
-
-            </div>
-        </React.Fragment>
-    );
-}
-
-
 export function Casa_Sociale() {
     return (
         <React.Fragment>
@@ -420,6 +349,48 @@ export function Casa_Sociale() {
                         Los materiales se eligieron por su disponibilidad y bajo costo. Se usaron elementos cuyo sistema
                         constructivo y características les brindan resistencia sísmica y confort térmico a las
                         viviendas.
+
+
+                    </p>
+                </div>
+
+            </div>
+        </React.Fragment>
+    );
+}
+
+export function casa_Selvaggio() {
+    return (
+        <React.Fragment>
+            <div className="row">
+                <div className="col-4">
+                    <Carousel>
+                        <Carousel.Item interval={3000}>
+                            <img className="imgcaruselP" src={P15_1}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P15_2}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P15_3}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P15_4}/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="imgcaruselP" src={P15_5}/>
+                        </Carousel.Item>
+                    </Carousel>
+                    <h5 className="titleProject">Casa Selvaggio</h5>
+                </div>
+                <div className="col-8">
+                    <p className="descripcionProject1">
+                        Cuenta con una armoniosa combinación de materiales y por su forma se obtienen ambientes
+                        interiores frescos e iluminados.
+                        Para la construcción de esta casa para climas cálidos se eligieron materiales como la madera y
+                        el concreto aparente que resaltan su interior.
+                        Cuenta con una doble altura que genera que el calor salga del hogar y el uso de sus ventanales
+                        genera un ambiente de confort, relajación y ventilación natural.
 
 
                     </p>

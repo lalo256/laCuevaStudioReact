@@ -5,9 +5,9 @@ import FooterCompo from "../component/FooterCompo";
 import '../component/style/proyecto.css'
 import {
     Casa_Ciotola,
-    Casa_da_luce, Casa_Della_Natura, Casa_di_contrasto, Casa_Giardino_Pensile, Casa_Matiz,
+    Casa_da_luce, Casa_Della_Natura, Casa_di_contrasto,
     Casa_Piccola,
-    Casa_Purpura, Casa_Sociale,
+    Casa_Purpura, casa_Selvaggio, Casa_Sociale,
     Casa_T,
     Puntos_Altos,
     Stanza_Bianca
@@ -57,8 +57,8 @@ class Proyecto extends React.Component {
                     <Navbar/>
                     <div className="container proyect">
 
+                        {casa_Selvaggio()}
                         {Casa_Sociale()}
-                        {Casa_Giardino_Pensile()}
                         {Casa_Della_Natura()}
                         {Casa_T()}
 
@@ -118,7 +118,7 @@ class Proyecto extends React.Component {
                         {Puntos_Altos()}
                         {Casa_Ciotola()}
                         {Casa_di_contrasto()}
-                        {Casa_Matiz()}
+
 
                         <div className="paginationDiv container">
                             <ul className="pagination">
