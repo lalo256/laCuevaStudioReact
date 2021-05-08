@@ -267,11 +267,9 @@ export function Casa_di_contrasto() {
                 </div>
                 <div className="col-8">
                     <p className="descripcionProject1">
-                        Una casa cuyo revestimiento de madera le otorga un contraste muy
-                        peculiar en la fachada emulando la naturaleza, que incorpora la
-                        modernidad en su interior. Los tonos neutros, resaltando el gris y
-                        negro visten cada rincon de esta casa, dotandola de una elegancia y
-                        naturalidad.
+                        Una casa cuyo revestimiento de madera le otorga un contraste muy peculiar en la fachada emulando
+                        la naturaleza, que incorpora la modernidad en su interior. Los tonos neutros, resaltando el gris
+                        y negro visten cada rincón de esta casa, dotándola de una elegancia y naturalidad.
                     </p>
                 </div>
 
@@ -342,13 +340,11 @@ export function Casa_Sociale() {
                 <div className="col-8">
                     <p className="descripcionProject1">
                         Una vivienda de interés social con una superficie total de 95 m2, creada para evocar la
-                        sencilles , la mínima superficie habitable.
-                        varios muebles y closet´s , es del mismo material (concreto) que el de la vivienda al igual que
-                        sus muros, sellados para evitar la filtración de humedad.
-
-                        Los materiales se eligieron por su disponibilidad y bajo costo. Se usaron elementos cuyo sistema
-                        constructivo y características les brindan resistencia sísmica y confort térmico a las
-                        viviendas.
+                        sencillez , la mínima superficie habitable. varios muebles y closet’s , es del mismo material
+                        (concreto) que el de la vivienda al igual que sus muros, sellados para evitar la filtración de
+                        humedad. Los materiales se eligieron por su disponibilidad y bajo costo. Se usaron elementos
+                        cuyo sistema constructivo y características les brindan resistencia sísmica y confort térmico a
+                        las viviendas.
 
 
                     </p>

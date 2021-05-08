@@ -107,10 +107,10 @@ export default class ServiciosDesc extends React.Component {
                                 <div className="container">
                                     <h5 className="descripcionServicio fontM">
                                         Ofrecemos originalidad, elegancia y vanguardia, proponiendo una opción
-                                        para integrar tu personalidad a tu hogar , dándole a cada pieza una
-                                        razón por la que tenga que ser usada , buscando en su interior líneas
-                                        geométricas limpias. Una atmósfera suave, y con colores monocromáticos ,
-                                        buscando que el espacio , interactúe con los objetos y lo defina.
+                                        para integrar tu personalidad a tu hogar, dándole a cada pieza una
+                                        razón por la que tenga que ser usada, buscando en su interior líneas
+                                        geométricas limpias. Una atmósfera suave, y con colores monocromáticos,
+                                        buscando que el espacio, interactúe con los objetos y lo defina.
                                     </h5>
                                 </div>
                             </div>
