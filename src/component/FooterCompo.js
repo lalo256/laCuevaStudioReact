@@ -11,7 +11,7 @@ class FooterCompo extends React.Component {
             <React.Fragment>
                 <div className="fontFooter divFooterPrincipal">
                     <p className="Text1">Copyright © Todos los Derechos Reservados.<br/></p>
-                    <a href="https://www.instagram.com/lacuevastudio_arq/">
+                    <a href="https://www.instagram.com/lacuevastudio.arquitectos/">
                         <img className="instaImg" src={Insta}/>
                     </a>
                     <a href="https://www.pinterest.com.mx/lacuevastudio_Arq/_saved/">
