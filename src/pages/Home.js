@@ -1,38 +1,32 @@
 import React from 'react';
 import Navbar from "../component/Navbar";
-import Carousel from "react-bootstrap/Carousel";
-import '../component/style/Home.css'
-import carru1 from '../Images/0451.jpeg'
-import carru2 from '../Images/0452.jpeg'
-import carru3 from '../Images/0453.jpeg'
-import carru4 from '../Images/0454.jpeg'
+import '../component/style/Home.css';
+import videopc from '../Images/fn.mp4';
+import videoTablet from '../Images/fn2.mp4';
+import videomovil from '../Images/fn3.mp4';
 import FooterCompo from '../component/FooterCompo';
 
-class Home extends React.Component{
-    render() {
+export default function Home(){
+
         return(
             <React.Fragment>
                 <Navbar />
-                <div className="container">
-                    <Carousel>
-                        <Carousel.Item interval={3000}>
-                            <img className="imgcarusel" src={carru1} />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcarusel" src={carru2}/>
-                            </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcarusel" src={carru3}/>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img className="imgcarusel" src={carru4}/>
-                        </Carousel.Item>
-                    </Carousel>
+                <div className="videoPosition">
+                    <video loop autoPlay className="video1" width="100%" height="100%">
+                        <source src={videopc}/>
+                    </video>
+                    <video loop autoPlay className="video2" width="100%" height="100%">
+                        <source src={videoTablet}/>
+                    </video>
+                    <video loop autoPlay className="video3" width="100%" height="100%">
+                        <source src={videomovil}/>
+                    </video>
                 </div>
-                <FooterCompo />
+                <div>
+                    <FooterCompo clase1={"homeConfig fontposition1"} clase2={"homeConfig fontposition2"} clase3={"homeConfig fontposition3"}/>
+                </div>
+
             </React.Fragment>
         )
     }
-}
 
-export default Home;

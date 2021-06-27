@@ -1,10 +1,148 @@
-.styleNavbar{
-    font-family: Ailerons-Regular;
-    font-size: 20px;
+.tituloNavbar {
+    font-size: 4rem;
+    font-family: Ailerons;
 }
 
-.logoimg{
-    width:60px;
-    height:60px;
-    padding-bottom:10px;
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.tdNavbar {
+    font-family: Ailerons;
+    font-size: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.bodyMenu {
+    background: black;
+}
+
+.BtnMenu {
+    height: 6.5rem;
+    width: 100%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.divMenu {
+    width: 35%;
+    background: black;
+    height: 6.5rem;
+    right: 0;
+    position: absolute;
+    top: 0;
+    display: inline-flex;
+}
+
+
+.iconStyle {
+    color: black;
+    font-size: 5rem;
+}
+
+.divMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    width: 40%;
+    height: 6.5rem;
+    font-size: 100%;
+}
+
+.tituloMenu {
+    font-family: Ailerons;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding-top: 15px;
+}
+
+.divPrincipalNavbar {
+    background: whitesmoke;
+    height: 6.5rem;
+    width: 100%;
+    position: relative;
+}
+
+.menuDespliegue {
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 90%;
+    overflow-y: hidden;
+    right: 0;
+    background: black;
+    color: whitesmoke;
+}
+
+li {
+    font-family: Ailerons;
+    font-size: 5rem;
+    cursor: pointer;
+    right: 0;
+}
+
+.displaypc{
+    display: inline;
+}
+.displatmovil{
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+    .tituloMenu {
+        font-size: 20px;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .tituloMenu {
+        padding-top: 15px;
+    }
+    .displaypc{
+        display: none;
+    }
+    .displatmovil{
+        display: inline;
+    }
+    .tituloNavbar {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .tituloMenu {
+        padding-top: 15px;
+    }
+    .tituloNavbar {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .iconStyle {
+        color: black;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tituloMenu {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .tituloNavbar {
+        font-size: 1.5rem;
+        padding-top: 25px;
+    }
 }

@@ -20,7 +20,7 @@ class Producto extends React.Component{
                         <div className="col-4">
                             <h6 className="titleProduct1">Mini-guia</h6>
                             <a href="/producto/pdf" target="_blank">
-                            <img src={pdf} className="ImgProduct"/>
+                            <img src={pdf} className="ImgProduct" alt={"fd"}/>
                             </a>
                         </div>
                     </div>

@@ -1,28 +1,38 @@
-.instaImg {
-    width: 3rem;
-    height: 3rem;
-    padding: 8px;
-}
-
 .fontFooter {
     color: gray;
 }
 
 
 .divFooterPrincipal {
-    padding-top: 2rem;
-}
-
-/*movil*/
-@media only screen and (max-width: 768px) {
-
+    position: absolute;
+    display: inline-flex;
 }
 
 /*pc*/
 @media only screen and (min-width: 768px) {
     .Text1 {
         position: absolute;
-        right: 1rem;
+        right: 0;
+        bottom: 0;
     }
 
+}
+
+.ftletra {
+    color: black;
+    font-size: 2rem;
+}
+
+.fontposition1 {
+
+}
+
+.fontposition2 {
+    position: relative;
+    left: 30%;
+}
+
+.fontposition3 {
+    position: relative;
+    left: 55%;
 }

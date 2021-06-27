@@ -1,24 +1,39 @@
 .presentacinTitulo {
-    color: red;
-    font-family: arial;
+    color: whitesmoke;
+    font-family: Ailerons;
     padding: 10px;
+    left: 0;
+}
+
+.nosotrosConfig {
+    color: black;
+    font-size: 2rem;
 }
 
 .nosotrosPresentacion {
-    color: gray;
+    color: whitesmoke;
     font-family: arial;
     pading: 15px;
+    font-size: 1.5rem;
 }
 
 .lema {
-    color: gray;
+    color: whitesmoke;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
+
 }
 
 .botonesNombre {
     font-family: Ailerons-Regular;
 
+}
+
+.divFootNosotros {
+    height: 110%;
+    maxHeight: 900px;
+    bottom: -50px;
+    position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,7 +70,7 @@
 }
 
 /*movil*/
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .imgNosoM {
         position: relative;
         width: 15rem;
@@ -90,5 +105,10 @@
 
     .ocultarPc {
         display: none;
+    }
+
+    .nosotrosConfig {
+        color: black;
+        font-size: 1.5rem;
     }
 }

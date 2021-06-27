@@ -1,33 +1,26 @@
 import React from "react";
-
-import Insta from '../Images/instagram-brands.svg';
-import pinter from '../Images/pinterest-brands.svg';
-import linke from '../Images/linkedin-in-brands.svg';
 import './style/FooterCompo.css';
 
-class FooterCompo extends React.Component {
-    render() {
+export default function FooterCompo(props) {
+
         return (
             <React.Fragment>
                 <div className="fontFooter divFooterPrincipal">
+                    <br/>
                     <p className="Text1">Copyright © Todos los Derechos Reservados.<br/></p>
-                    <a href="https://www.instagram.com/lacuevastudio.arquitectos/">
-                        <img className="instaImg" src={Insta}/>
-                    </a>
-                    <a href="https://www.pinterest.com.mx/lacuevastudio_Arq/_saved/">
-                        <img className="instaImg" src={pinter}/>
-                    </a>
-                    <a href="https://www.linkedin.com/company/la-cueva-studio/?viewAsMember=true">
-                        <img className="instaImg" src={linke}/>
-                    </a>
-                    <a href="https://www.homify.com.mx/profesionales/8234663/la-cueva-studio" target="_blank"><img
-                        alt="La Cueva Studio en homify"
-                        src="https://www.homify.com.mx/assets/badges/standard/90x32_black.png"/></a>
+                    <br/>
+                    <ul style={{display:"inline-flex"}}>
+                        <a href="https://www.instagram.com/lacuevastudio.arquitectos/">
+                            <li className={props.clase1? props.clase1:"ftletra fontposition1"}>Instagram</li>
+                        </a>
+                        <a href="https://www.pinterest.com.mx/lacuevastudio_Arq/_saved/">
+                            <li className={props.clase2? props.clase2:"ftletra fontposition2"}>linkedin</li>
+                        </a>
+                        <a href="https://www.linkedin.com/company/la-cueva-studio/?viewAsMember=true">
+                            <li className={props.clase3? props.clase3:"ftletra fontposition3"}>pinterest</li>
+                        </a>
+                    </ul>
                 </div>
-                <br/><br/>
             </React.Fragment>
         )
     }
-}
-
-export default FooterCompo;

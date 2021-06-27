@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './style/Nosotros.css'
 import Crs from '../Images/2451.jpeg';
 import Jesus from '../Images/2452.1.jpeg';
@@ -17,21 +17,21 @@ function NosotrosDesc() {
                         <h6>Carlos Cuevas</h6>
                     </div>
                     <div className="col-2">
-                        <img src={Crs} className="imgPrincipal"/>
+                        <img src={Crs} className="imgPrincipal" alt="crs"/>
                     </div>
 
                     <div className="col-1">
                         <h6>Jesus Cuevas</h6>
                     </div>
                     <div className="col-2">
-                        <img src={Jesus} className="imgPrincipal"/>
+                        <img src={Jesus} className="imgPrincipal" alt="jes"/>
                     </div>
 
                     <div className="col-1">
                         <h6>Eduardo Cuevas</h6>
                     </div>
                     <div className="col-2">
-                        <img src={Eduardo} className="imgPrincipal"/>
+                        <img src={Eduardo} className="imgPrincipal" alt="edu"/>
                     </div>
 
 
@@ -48,21 +48,21 @@ function NosotrosDesc() {
                         <h3>Carlos Cuevas</h3>
                     </div>
                     <div className="col-6">
-                        <img src={Crs} className="imgPrincipal"/>
+                        <img src={Crs} className="imgPrincipal" alt={"fd"}/>
                     </div>
 
                     <div className="col-6">
                         <h3>Jesus Cuevas</h3>
                     </div>
                     <div className="col-6">
-                        <img src={Jesus} className="imgPrincipal"/>
+                        <img src={Jesus} className="imgPrincipal" alt={"fd"}/>
                     </div>
 
                     <div className="col-6">
                         <h3>Eduardo Cuevas</h3>
                     </div>
                     <div className="col-6">
-                        <img src={Eduardo} className="imgPrincipal"/>
+                        <img src={Eduardo} className="imgPrincipal" alt={"fd"}/>
                     </div>
 
 

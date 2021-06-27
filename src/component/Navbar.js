@@ -1,47 +1,105 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './style/Navbar.css'
-import logo from '../Images/1451.png'
-import '../assets/fonts/Ailerons Regular.ttf';
+import './style/Navbar.css';
+import {useHistory} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGripLines} from "@fortawesome/free-solid-svg-icons";
 
-class Navbar extends React.Component{
-    render() {
-        return (
-            <React.Fragment>
-                <div className="container border-bottom">
-                    <nav className="navbar navbar-expand-md bg-transparent navbar-light">
-                        <a className="navbar-brand" href="/Home"><img src={logo}/> </a>
-                        <a className="navbar-brand styleNavbar" href="/Home">La Cueva Studio</a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavbar">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul className="navbar-nav styleNavbar">
-                                <li className="nav-item">
-                                    <a className="nav-link text-danger" href="/nosotros">NOSOTROS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link text-danger" href="/servicios">SERVICIOS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link text-danger" href="/proyecto">PROYECTOS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link text-danger" href="/producto">PRODUCTOS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link text-danger" href="/contacto">CONTACTO</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </React.Fragment>
-        )
+import {Modal} from "react-bootstrap";
+
+export default function Navbar() {
+    const [menu, setMenu] = useState(false);
+    const history = useHistory();
+
+    function handleSelect(e) {
+        switch (Number(e.target.id)) {
+            case 1:
+                history.push("/home");
+                break;
+            case 2:
+                history.push("/nosotros");
+                break;
+            case 3:
+                history.push("/servicios");
+                break;
+            case 4:
+                history.push("/proyecto");
+                break;
+            case 5:
+                history.push("/producto");
+                break;
+            case 6:
+                history.push("/contacto");
+                break;
+            default:
+
+        }
     }
+
+    function butonSelect() {
+        console.log(menu);
+        if (menu) {
+            setMenu(false);
+        }
+        if (!menu) {
+            setMenu(true);
+        }
+    }
+
+    const handleClose = () => setMenu(false);
+
+    return (
+        <React.Fragment>
+            {menu ?
+                <Modal show={menu} onHide={handleClose}>
+                    <Modal.Body className="bodyMenu">
+                        <div>
+                            <table onClick={handleSelect}>
+                                <tr>
+                                    <td id={1} className="tdNavbar">HOME</td>
+                                </tr>
+                                <tr>
+                                    <td id={2} className="tdNavbar">NOSOTROS</td>
+                                </tr>
+                                <tr>
+                                    <td id={3} className="tdNavbar">SERVICIOS</td>
+                                </tr>
+                                <tr>
+                                    <td id={4} className="tdNavbar">PROYECTOS</td>
+                                </tr>
+                                <tr>
+                                    <td id={5} className="tdNavbar">PRODUCTOS</td>
+                                </tr>
+                                <tr>
+                                    <td id={6} className="tdNavbar">CONTACTO</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </Modal.Body>
+
+                </Modal> : null}
+            <div>
+                <div className="divPrincipalNavbar container-fluid">
+                    <div style={{width: "65%", background: "whitesmoke", height: "6.5rem"}}>
+                        <p className="tituloNavbar">la cueva studio</p>
+                    </div>
+                    <div className="divMenu">
+                        <div className="">
+                            <p className="tituloMenu">
+                                <span className="displaypc">Arquitectura y Diseño</span>
+                                <span className="displatmovil">Arquitectura <br/>y Diseño</span>
+                            </p>
+                        </div>
+                        <div style={{right: "0", position: "absolute"}}>
+                            <button className="BtnMenu" onClick={butonSelect}>
+                                <FontAwesomeIcon icon={faGripLines} className="iconStyle" style={{color:"whitesmoke"}}/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </React.Fragment>
+    )
 }
-export default Navbar;
+

@@ -1,4 +1,46 @@
-.imgcarusel{
-    width:80%;
-    height:100%;
+.videoPosition {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.divFooterPrincipal {
+    position: absolute;
+    z-index: 1;
+    bottom: .5rem;
+    width: 100%;
+
+}
+.homeConfig{
+    color: black;
+    font-size: 2rem;
+}
+@media screen and (min-width: 1050px) {
+    .video2 {
+        display: none;
+    }
+
+    .video3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .video1 {
+        display: none;
+    }
+    .video3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .video1 {
+        display: none;
+    }
+    .video2 {
+        display: none;
+    }
+    .video3{
+        display: inline;
+    }
 }

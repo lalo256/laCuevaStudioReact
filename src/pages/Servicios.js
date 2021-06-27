@@ -6,18 +6,17 @@ import '../component/style/Servicios.css';
 
 export default class Servicios extends React.Component {
 
-    constructor(props) {
-        super();
-    }
 
     render() {
         return (
             <React.Fragment>
                 <Navbar/>
-                <div className="container">
+                <div className="container-fluid">
                     <ServiciosDesc/>
                 </div>
-                <FooterCompo/>
+                <div className="divFootServicios">
+                    <FooterCompo/>
+                </div>
             </React.Fragment>
         );
     }

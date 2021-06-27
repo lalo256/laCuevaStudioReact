@@ -9,23 +9,24 @@ class Nosotros extends React.Component {
         return (
             <React.Fragment>
                 <Navbar/>
-                <div className="container">
+                <div style={{width: "100%", height: "100%", background: "black", left: "0"}} className="container-fluid">
                     <h1 className="presentacinTitulo">Nosotros</h1>
                     <p className="nosotrosPresentacion">
-                        La Cueva Studio con sede en ciudad de México y Cuautla Morelos
-                        enfocado en el diseño, construcción, remodelación y diseño de interiores
-                        de viviendas unifamiliares y proyectos con poco presupuesto, garantizando
-                        la calidad de la obra.
+                        Nacimos bajo la necesidad de ayudar y asesorar a nuestros clientes en la construcción de su
+                        hogar ideal desde el proceso creativo hasta la entrega de sus llaves, Incluyéndolos en cada
+                        parte, decisión y acción de su nuevo hogar, enfocado en el diseño, construcción, remodelación,
+                        gestión y diseño de interiores. Evitando el estrés y complicaciones que este proceso genera.
 
-                        <br/><br/>
-                        Fundado por Carlos Cuevas, Eduardo Cuevas Y Jesus Cuevas.
 
-                        <h2 className="lema">"Arquitectura al alcance de todos"</h2>
+                        <h2 className="lema">"Arquitectura como tu digas, como tu quieras y como tu decidas”</h2>
                     </p>
                 </div>
                 <NosotrosDesc/>
                 <br/>
-                <FooterCompo/>
+                <div className="divFootNosotros">
+                    <FooterCompo clase1={"nosotrosConfig fontposition1"} clase2={"nosotrosConfig fontposition2"} clase3={"nosotrosConfig fontposition3"}/>
+                </div>
+
             </React.Fragment>
         )
     }

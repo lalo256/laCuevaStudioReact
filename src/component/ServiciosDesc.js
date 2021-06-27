@@ -1,124 +1,50 @@
 import React from "react";
+import './style/Servicios.css';
+import {faChair, faTools} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAccusoft} from "@fortawesome/free-brands-svg-icons";
 
-export default class ServiciosDesc extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            showMe1: true,
-            showMe2: false,
-            showme3: false
-        }
-    }
+export default function ServiciosDesc() {
+    return (
+        <React.Fragment>
+            <div className="container-fluid divprincipalServicio">
+                <p className="serviciosTitle">Servicios</p>
+                <div className="container-fluid">
+                    <p className="descripcionServicios">
+                        Nuestra arquitectura, interiorismo y remodelaciones esta enfocada y pensada para ti, adaptándola
+                        a tus necesidades, gustos y costrubres, todo a tu medida y sin ningún tipo de complicaciones en
+                        el proceso.
 
-    operation1() {
-        this.setState({
-            showMe1: !this.state.showMe1,
-            showMe2: false,
-            showMe3: false
-        })
-    }
+                        te guiaremos y asesoraremos a tomar las mejores decisiones, adaptándolo a tu estilo de vida.
+                        contando con con tigo en todo momento en el proyecto, adaptándonos a tu presupuesto, gustos y
+                        necesidades.
 
-    operation2() {
-        this.setState({
-            showMe1: false,
-            showMe2: !this.state.showMe2,
-            showMe3: false
-        })
-    }
+                        Nos encargaremos del diseño como de la construcción. Eso incluye la gestión de las licencias, de
+                        los permisos necesarios, de los documentos técnicos y todos los trámites burocráticos
+                        correspondientes antes, durante y después de la obra.
 
-    operation3() {
-        this.setState({
-            showMe1: false,
-            showMe2: false,
-            showMe3: !this.state.showMe3
-        })
-    }
-
-
-    render() {
-        let class1 = "btn btn-outline-dark";
-        let class2 = "btn btn-outline-dark";
-        let class3 = "btn btn-outline-dark";
-        if (this.state.showMe1) {
-            class1 = "btn btn-outline-dark active"
-            class2 = "btn btn-outline-dark";
-            class3 = "btn btn-outline-dark";
-        }
-        if (this.state.showMe2) {
-            class1 = "btn btn-outline-dark"
-            class2 = "btn btn-outline-dark active";
-            class3 = "btn btn-outline-dark";
-        }
-        if (this.state.showMe3) {
-            class1 = "btn btn-outline-dark"
-            class2 = "btn btn-outline-dark";
-            class3 = "btn btn-outline-dark active";
-        }
-        return (
-            <React.Fragment>
-                <div className="row divServPrincipal">
-                    <div className="col-3 divServIzq">
-                        <h3 className="text-danger">Servicios</h3><br/>
-                        <div className="container botonesNombre">
-                            <button type="button" className={class1} data-target="#Arqui"
-                                    onClick={() => this.operation1()}>Arquitectura
-                            </button>
-                            <br/><br/>
-                            <button type="button" className={class2} data-target="#Remodel"
-                                    onClick={() => this.operation2()}>Remodelación
-                            </button>
-                            <br/><br/>
-                            <button type="button" className={class3} data-target="#Diseño"
-                                    onClick={() => this.operation3()}>Diseño de interiores
-                            </button>
-                        </div>
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-8">
-                        {this.state.showMe1 ?
-                            <div>
-                                <div className="container">
-                                    <h6 className="descripcionServicio fontM">
-                                        Buscando siempre una arquitectura con identidad mexicana, limpia de
-                                        contrastes y matices, con nuevas tecnologías , con espacios para
-                                        disfrutar y vivir una experiencia intima en su interior, aislandose del
-                                        exterior con condiciones de confort (térmicas, iluminación, acústicas y
-                                        ergonomícas) y así trasmitir los deseos y necesidades de los usuarios a
-                                        los espacios a habitar.
-                                    </h6>
-                                </div>
-                            </div>
-                            : null}
-
-                        {this.state.showMe2 ?
-                            <div>
-                                <div className="container">
-                                    <h6 className="descripcionServicio fontM">
-                                        Mejoramos espacios con diseños innovadores y de la mejor calidad
-                                        para satisfacer a cada uno de nuestros clientes sin importar cual sea su
-                                        necesidad.
-                                    </h6>
-                                </div>
-                            </div>
-                            : null}
-
-                        {this.state.showMe3 ?
-                            <div>
-                                <div className="container">
-                                    <h5 className="descripcionServicio fontM">
-                                        Ofrecemos originalidad, elegancia y vanguardia, proponiendo una opción
-                                        para integrar tu personalidad a tu hogar, dándole a cada pieza una
-                                        razón por la que tenga que ser usada, buscando en su interior líneas
-                                        geométricas limpias. Una atmósfera suave, y con colores monocromáticos,
-                                        buscando que el espacio, interactúe con los objetos y lo defina.
-                                    </h5>
-                                </div>
-                            </div>
-                            : null}
-                    </div>
-
+                        Todo esto a un precio fijo y en tiempo determinado, para que no tengas ningún imprevistos en
+                        mudarte a tu nuevo hogar.
+                        <br/><br/>
+                        ¡ llegaste al lugar indicado nosotros te ayudamos ¡
+                    </p>
                 </div>
-            </React.Fragment>
-        );
-    }
+                <br/>
+                <div className="row container">
+                    <div className="col-4">
+                        <FontAwesomeIcon icon={faAccusoft} className="iconStyleService"/>
+                        <h1 className="letra">Arquitectura</h1>
+                    </div>
+                    <div className="col-4">
+                        <FontAwesomeIcon icon={faChair} className="iconStyleService"/>
+                        <h1 className="letra">Diseño interior</h1>
+                    </div>
+                    <div className="col-4">
+                        <FontAwesomeIcon icon={faTools} className="iconStyleService"/>
+                        <h1 className="letra">Remodelación</h1>
+                    </div>
+                </div>
+            </div>
+        </React.Fragment>
+    );
 }

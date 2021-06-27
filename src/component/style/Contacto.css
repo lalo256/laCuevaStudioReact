@@ -1,57 +1,170 @@
-.imgContacto {
-    width: 8rem;
-    height: 45rem;
+.divContenidoContacto {
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.pcView{
+    display: inline;
+}
+.movilView{
+    display: none;
 }
 
-.window {
-    background-color: lightsteelblue;
+.divFootContacto {
+
 }
 
-.contactoIzq {
-    border-right: 1px solid gray;
-    font-family: Ailerons-Regular;
+.tituloContacto {
+    font-family: Ailerons;
+    color: whitesmoke;
+    font-size: 8rem;
+    position: absolute;
+    left: 45%;
 }
 
+.divFormulario {
+    position: absolute;
+    top: 13rem;
+    font-family: Ailerons;
+    color: whitesmoke;
+    padding-left: 10px;
+}
 
-@media only screen and (max-width: 768px) {
-    .imgContactoSm {
-        width: 2.3rem;
-        height: 23rem;
+.spanContacto {
+    font-size: 1.5rem;
+}
+
+.tdTittle {
+    font-size: 30px;
+}
+
+.btnContacto {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+    .tdTittle {
+        font-size: 20px;
     }
 
-    .contactoIzq {
-        font-family: Ailerons-Regular;
-        padding-top: 3rem;
+    .btnContacto {
+        font-size: 20px;
     }
-
 }
 
-@media only screen and (max-width: 768px) {
-    .ocultar-divs {
+@media screen and (max-width: 900px) {
+    .tdTittle {
+        font-size: 15px;
+    }
+
+    .btnContacto {
+        font-size: 15px;
+    }
+
+    .spanContacto {
+        font-size: 15px;
+    }
+
+    .divFootContacto {
+        position: relative;
+        top: 10%;
+    }
+
+    .tituloContacto {
+        font-size: 6rem;
+        position: absolute;
+        left: 45%;
+    }
+
+    .ftletra {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .divFormulario {
+        top: 8.5rem;
+    }
+
+    .spanContacto {
+        font-size: 1rem;
+    }
+
+    .tdTittle {
+        font-size: 13px;
+    }
+
+    .btnContacto {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .divContenidoContacto {
+        background: black;
+        height: 140%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .divFootContacto {
+        position: absolute;
+        top: 80%;
+    }
+    .pcView{
         display: none;
     }
-
-    .contactoIzq {
-        font-family: Ailerons-Regular;
-        padding-top: 3rem;
+    .movilView{
+        display: inline;
+        position: absolute;
+        top: 31rem;
+        right: 3rem;
+    }
+    .spanContactoMovil1 {
+        font-size: 1.5rem;
+        left: 0;
+        top: 33rem;
+        color: whitesmoke;
+        font-family: Ailerons;
+    }
+    .spanContactoMovil2 {
+        font-size: 1.5rem;
+        left: 0;
+        top: 38rem;
+        color: whitesmoke;
+        font-family: Ailerons;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .ocultar-div {
-        display: none;
+@media screen and (max-width: 600px){
+    .tituloContacto {
+        font-size: 4rem;
+        position: absolute;
+        left: 45%;
     }
-
-    .formContactoSm {
-        font-size: .5rem;
+    .spanContactoMovil1 {
+        font-size: 1rem;
+        top: 33rem;
+        }
+    .spanContactoMovil2 {
+        font-size: 1rem;
+        top: 38rem;
+        }
+}
+@media screen and (max-width: 500px){
+    .spanContactoMovil1 {
+        top: 25rem;
+        font-size: 1.3rem;
     }
-
-    .titleSm {
-        font-size: 2px;
+    .spanContactoMovil2 {
+        top: 28rem;
+        font-size: 1.3rem;
     }
-
-    .contactFont {
-
+    .tituloContacto {
+        font-size: 4rem;
+        position: absolute;
+        right: 45%;
+        left: 0;
     }
-
 }

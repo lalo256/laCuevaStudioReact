@@ -1,16 +1,10 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 
-import FooterCompo from "../component/FooterCompo";
+//import FooterCompo from "../component/FooterCompo";
 import '../component/style/proyecto.css'
 import {
-    Casa_Ciotola,
-    Casa_da_luce, Casa_Della_Natura, Casa_di_contrasto,
-    Casa_Piccola,
-    Casa_Purpura, casa_Selvaggio, Casa_Sociale,
-    Casa_T,
-    Puntos_Altos,
-    Stanza_Bianca
+     casa_Selvaggio, Casa_Sociale,
 } from "../component/proyectos";
 
 
@@ -49,9 +43,7 @@ class Proyecto extends React.Component {
     }
 
     render() {
-        {/*pagina 1*/
-        }
-        if (this.state.Page1 === true) {
+        if (this.state.Page1 === true) {// eslint-disable-next-line
             return (
                 <React.Fragment>
                     <Navbar/>
@@ -59,11 +51,9 @@ class Proyecto extends React.Component {
 
                         {casa_Selvaggio()}
                         {Casa_Sociale()}
-                        {Casa_Della_Natura()}
-                        {Casa_T()}
-
 
                     </div>
+                    {/*
                     <div className="paginationDiv container">
                         <ul className="pagination">
                             <li className="page-item page-link active" onClick={() => this.operation1()}>1</li>
@@ -72,25 +62,21 @@ class Proyecto extends React.Component {
                             <li className="page-item page-link text-danger" onClick={() => this.operation2()}>Next</li>
                         </ul>
                     </div>
-                    <FooterCompo/>
+                    */}
+
                 </React.Fragment>
             )
         }
-        {/*pagina 2*/
-        }
-        if (this.state.Page2 === true) {
+
+        if (this.state.Page2 === true) {// eslint-disable-next-line
             return (
                 <React.Fragment>
                     <Navbar/>
                     <div className="container proyect">
 
-                        {Casa_Piccola()}
-                        {Casa_da_luce()}
-                        {Casa_Purpura()}
-                        {Stanza_Bianca()}
 
-
-                        <div className="paginationDiv container">
+{/*
+<div className="paginationDiv container">
                             <ul className="pagination">
                                 <li className="page-item page-link text-danger"
                                     onClick={() => this.operation1()}>Previous
@@ -102,25 +88,22 @@ class Proyecto extends React.Component {
                                 </li>
                             </ul>
                         </div>
-                        <FooterCompo/>
+*/}
+
                     </div>
                 </React.Fragment>
             )
         }
-        {/*pagina 3*/
-        }
-        if (this.state.Page3 === true) {
+
+        if (this.state.Page3 === true) {// eslint-disable-next-line
             return (
                 <React.Fragment>
                     <Navbar/>
                     <div className="container proyect">
 
-                        {Puntos_Altos()}
-                        {Casa_Ciotola()}
-                        {Casa_di_contrasto()}
 
-
-                        <div className="paginationDiv container">
+{/*
+<div className="paginationDiv container">
                             <ul className="pagination">
                                 <li className="page-item page-link text-danger"
                                     onClick={() => this.operation2()}>Previous
@@ -130,8 +113,9 @@ class Proyecto extends React.Component {
                                 <li className="page-item page-link active" onClick={() => this.operation3()}>3</li>
                             </ul>
                         </div>
+*/}
+
                     </div>
-                    <FooterCompo/>
                 </React.Fragment>
             )
         }
