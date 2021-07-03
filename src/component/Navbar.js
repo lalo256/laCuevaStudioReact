@@ -100,24 +100,6 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                {/*<div className="divPrincipalNavbar container-fluid">
-                    <div style={{width: "75%", background: "transparent", height: "4.5rem"}}>
-                        <p className="tituloNavbar">LA CUEVA STUDIO</p>
-                    </div>
-                    <div className="divMenu">
-                        <div className="">
-                            <p className="tituloMenu">
-                                <span className="displaypc">ARQUITECTURA Y DISEÑO</span>
-                                <span className="displatmovil">ARQUITECTURA <br/>Y DISEÑO</span>
-                            </p>
-                        </div>
-                        <div style={{right: "0", position: "absolute"}}>
-                            <button className="BtnMenu" onClick={butonSelect}>
-                                <FontAwesomeIcon icon={faGripLines} className="iconStyle" style={{color:"whitesmoke"}}/>
-                            </button>
-                        </div>
-                    </div>
-                </div>*/}
             </div>
         </React.Fragment>
     )

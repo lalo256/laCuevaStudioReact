@@ -3,13 +3,6 @@
     overflow-x: hidden;
 }
 
-.divFooterPrincipal {
-    position: absolute;
-    z-index: 1;
-    bottom: .5rem;
-    width: 100%;
-
-}
 .homeConfig{
     color: black;
     font-size: 2rem;

@@ -1,6 +1,6 @@
 .tituloNavbar {
     font-size: 3rem;
-    font-family: Ailerons;
+    font-family: Ailerons-Regular;
 
 }
 
@@ -14,7 +14,7 @@
 }
 
 .tdNavbar {
-    font-family: Ailerons;
+    font-family: Ailerons-Regular;
     font-size: 50px;
     color: whitesmoke;
     cursor: pointer;
@@ -57,7 +57,7 @@
 }
 
 .tituloMenu {
-    font-family: Ailerons;
+    font-family: Ailerons-Regular;
     font-size: 2rem;
     color: whitesmoke;
     padding-left:5px;
@@ -81,7 +81,7 @@
 }
 
 li {
-    font-family: Ailerons;
+    font-family: Ailerons-Regular;
     font-size: 5rem;
     cursor: pointer;
     right: 0;
