@@ -80,15 +80,35 @@ export default function Navbar() {
 
                 </Modal> : null}
             <div>
-                <div className="divPrincipalNavbar container-fluid">
-                    <div style={{width: "65%", background: "whitesmoke", height: "6.5rem"}}>
-                        <p className="tituloNavbar">la cueva studio</p>
+                <div className="divPrincipalNavbar" style={{position:"relative",top:"0",background:"whitesmoke"}}>
+                    <div className="" >
+                        <p className="tituloNavbar">LA CUEVA STUDIO</p>
+                    </div>
+                    <div className="">
+                        <div className="divMenu">
+                            <div className="">
+                                <p className="tituloMenu">
+                                    <span className="displaypc">ARQUITECTURA Y DISEÑO</span>
+                                    <span className="displatmovil">ARQUITECTURA <br/>Y DISEÑO</span>
+                                </p>
+                            </div>
+                            <div style={{right: "5px", position: "absolute"}}>
+                                <button className="BtnMenu" onClick={butonSelect}>
+                                    <FontAwesomeIcon icon={faGripLines} className="iconStyle" style={{color:"whitesmoke"}}/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*<div className="divPrincipalNavbar container-fluid">
+                    <div style={{width: "75%", background: "transparent", height: "4.5rem"}}>
+                        <p className="tituloNavbar">LA CUEVA STUDIO</p>
                     </div>
                     <div className="divMenu">
                         <div className="">
                             <p className="tituloMenu">
-                                <span className="displaypc">Arquitectura y Diseño</span>
-                                <span className="displatmovil">Arquitectura <br/>y Diseño</span>
+                                <span className="displaypc">ARQUITECTURA Y DISEÑO</span>
+                                <span className="displatmovil">ARQUITECTURA <br/>Y DISEÑO</span>
                             </p>
                         </div>
                         <div style={{right: "0", position: "absolute"}}>
@@ -97,7 +117,7 @@ export default function Navbar() {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div>*/}
             </div>
         </React.Fragment>
     )

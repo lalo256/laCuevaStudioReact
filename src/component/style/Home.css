@@ -13,34 +13,5 @@
 .homeConfig{
     color: black;
     font-size: 2rem;
-}
-@media screen and (min-width: 1050px) {
-    .video2 {
-        display: none;
-    }
-
-    .video3 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .video1 {
-        display: none;
-    }
-    .video3 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 791px) {
-    .video1 {
-        display: none;
-    }
-    .video2 {
-        display: none;
-    }
-    .video3{
-        display: inline;
-    }
+    bottom: 0;
 }

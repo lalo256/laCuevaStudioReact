@@ -5,7 +5,11 @@
 
 .divFooterPrincipal {
     position: absolute;
+    bottom: 0;
     display: inline-flex;
+}
+.Text1{
+    color: whitesmoke;
 }
 
 /*pc*/

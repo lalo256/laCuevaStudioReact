@@ -1,7 +1,7 @@
 .tituloNavbar {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Ailerons;
-    font-family: Ailerons-Regular;
+
 }
 
 .navbar {
@@ -15,7 +15,6 @@
 
 .tdNavbar {
     font-family: Ailerons;
-    font-family: Ailerons-Regular;
     font-size: 50px;
     color: whitesmoke;
     cursor: pointer;
@@ -26,18 +25,17 @@
 }
 
 .BtnMenu {
-    height: 6.5rem;
+    height: 4.5rem;
     width: 100%;
     background-color: black;
     border: 1px solid black;
 }
 
 .divMenu {
-    width: 35%;
+    width: 25%;
     background: black;
-    height: 6.5rem;
+    height: 4.5rem;
     right: 0;
-    position: absolute;
     top: 0;
     display: inline-flex;
 }
@@ -45,7 +43,7 @@
 
 .iconStyle {
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .divMenu {
@@ -54,7 +52,7 @@
     top: 0;
     background: black;
     width: 40%;
-    height: 6.5rem;
+    height: 4.5rem;
     font-size: 100%;
 }
 
@@ -62,14 +60,13 @@
     font-family: Ailerons;
     font-size: 2rem;
     color: whitesmoke;
-    padding-top: 15px;
+    padding-left:5px;
 }
 
 .divPrincipalNavbar {
     background: whitesmoke;
-    height: 6.5rem;
+    height: 4.5rem;
     width: 100%;
-    position: relative;
 }
 
 .menuDespliegue {
@@ -85,7 +82,6 @@
 
 li {
     font-family: Ailerons;
-    font-family: Ailerons-Regular;
     font-size: 5rem;
     cursor: pointer;
     right: 0;
