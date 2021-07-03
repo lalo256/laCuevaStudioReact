@@ -110,6 +110,9 @@ h1 {
         color: whitesmoke;
         font-size: 1rem;
     }
+    .serviciosIconsDiv{
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 425px){

@@ -3,6 +3,7 @@ import './style/Servicios.css';
 import {faChair, faTools} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAccusoft} from "@fortawesome/free-brands-svg-icons";
+import FooterCompo from "./FooterCompo";
 
 export default function ServiciosDesc() {
     return (
@@ -30,7 +31,7 @@ export default function ServiciosDesc() {
                     </p>
                 </div>
                 <br/>
-                <div className="row container">
+                <div className="row container-fluid serviciosIconsDiv">
                     <div className="col-4">
                         <FontAwesomeIcon icon={faAccusoft} className="iconStyleService"/>
                         <h1 className="letra">Arquitectura</h1>
@@ -42,6 +43,10 @@ export default function ServiciosDesc() {
                     <div className="col-4">
                         <FontAwesomeIcon icon={faTools} className="iconStyleService"/>
                         <h1 className="letra">Remodelación</h1>
+                    </div>
+                    <div style={{padding: "40px"}}/>
+                    <div style={{bottom: "0", position: "relative",}}>
+                        <FooterCompo/>
                     </div>
                 </div>
             </div>
