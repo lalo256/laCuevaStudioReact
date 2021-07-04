@@ -15,7 +15,7 @@ class Producto extends React.Component{
         return (
             <React.Fragment>
                 <Navbar />
-                <div className="row">
+                <div className="row" style={{height:"100%"}}>
                     <div className="container">
                         <div className="col-4">
                             <h6 className="titleProduct1">Mini-guia</h6>
@@ -26,7 +26,9 @@ class Producto extends React.Component{
                     </div>
                 </div>
                 <br/>
-                <FooterCompo />
+                <div style={{bottom:"0"}}>
+                    <FooterCompo />
+                </div>
             </React.Fragment>
         )
     }
