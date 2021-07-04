@@ -122,7 +122,6 @@ li {
     }
     .tituloNavbar {
         font-size: 2rem;
-        padding-top: 20px;
     }
 
     .iconStyle {
@@ -141,6 +140,5 @@ li {
 @media screen and (max-width: 400px){
     .tituloNavbar {
         font-size: 1.5rem;
-        padding-top: 25px;
     }
 }
