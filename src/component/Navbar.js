@@ -5,6 +5,7 @@ import './style/Navbar.css';
 import {useHistory} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGripLines} from "@fortawesome/free-solid-svg-icons";
+import Ailerons from '../assets/fonts/Ailerons_Regular.ttf';
 
 import {Modal} from "react-bootstrap";
 
@@ -82,7 +83,7 @@ export default function Navbar() {
             <div>
                 <div className="divPrincipalNavbar" style={{position:"relative",top:"0",background:"whitesmoke"}}>
                     <div className="" >
-                        <h3 className="tituloNavbar" style={{fontFamily:"Ailerons"}}>LA CUEVA STUDIO</h3>
+                        <h3 className="tituloNavbar" style={{fontFamily: Ailerons}}>LA CUEVA STUDIO</h3>
                     </div>
                     <div className="">
                         <div className="divMenu">
