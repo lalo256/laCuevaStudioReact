@@ -82,7 +82,7 @@ export default function Navbar() {
             <div>
                 <div className="divPrincipalNavbar" style={{position:"relative",top:"0",background:"whitesmoke"}}>
                     <div className="" >
-                        <p className="tituloNavbar">LA CUEVA STUDIO</p>
+                        <h3 className="tituloNavbar" style={{fontFamily:"Ailerons"}}>LA CUEVA STUDIO</h3>
                     </div>
                     <div className="">
                         <div className="divMenu">

@@ -1,43 +1,20 @@
-.fontFooter {
-    color: gray;
-}
-
-
-.divFooterPrincipal {
-    position: absolute;
-    bottom: 0;
-    display: inline;
-}
-.Text1{
+.divPrincipalFooter {
+    width: 100%;
     color: whitesmoke;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-
-/*pc*/
-@media only screen and (min-width: 768px) {
-    .Text1 {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
+.links{
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 20%;
 }
-
-.ftletra {
-    color: black;
-    font-size: 2rem;
-}
-
-.fontposition1 {
-
-}
-
-.fontposition2 {
-    position: relative;
-    left: 30%;
-}
-
-.fontposition3 {
-    position: relative;
-    left: 55%;
+.CopyR{
+    font-size: 15px;
+    color: gray;
+    right: 0;
+    cursor: default;
+    width: 40%;
+    text-align: right;
 }

@@ -46,9 +46,9 @@ export default function ServiciosDesc() {
                     </div>
                     <div style={{padding: "40px"}}/>
                     <div style={{bottom: "0", position: "relative",}}>
-                        <FooterCompo/>
                     </div>
                 </div>
+                <FooterCompo/>
             </div>
         </React.Fragment>
     );

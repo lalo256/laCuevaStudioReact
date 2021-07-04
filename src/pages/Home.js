@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <React.Fragment>
             <Navbar/>
-            <div>
+            <div style={{width:"100%"}}>
                 <Carousel>
                     <Carousel.Item interval={3000}>
                         <img className="imgcarusel" src={carru1} style={{width:"100%"}} alt="imgCarusel1"/>
