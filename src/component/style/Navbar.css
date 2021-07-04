@@ -1,6 +1,7 @@
 .tituloNavbar {
     font-size: 3rem;
-    font-family: "Ailerons";
+    cursor: pointer;
+    font-family: Ailerons;
 }
 
 .navbar {

@@ -81,9 +81,9 @@ export default function Navbar() {
 
                 </Modal> : null}
             <div>
-                <div className="divPrincipalNavbar" style={{position:"relative",top:"0",background:"whitesmoke"}}>
-                    <div className="" >
-                        <p className="tituloNavbar" style={{fontFamily:{Ailerons}}}>LA CUEVA STUDIO</p>
+                <div className="divPrincipalNavbar" style={{position: "relative", top: "0", background: "whitesmoke"}}>
+                    <div className="">
+                        <p className="tituloNavbar" onClick={handleSelect} id={1}>LA CUEVA STUDIO</p>
                     </div>
                     <div className="">
                         <div className="divMenu">
@@ -95,7 +95,8 @@ export default function Navbar() {
                             </div>
                             <div style={{right: "5px", position: "absolute"}}>
                                 <button className="BtnMenu" onClick={butonSelect}>
-                                    <FontAwesomeIcon icon={faGripLines} className="iconStyle" style={{color:"whitesmoke"}}/>
+                                    <FontAwesomeIcon icon={faGripLines} className="iconStyle"
+                                                     style={{color: "whitesmoke"}}/>
                                 </button>
                             </div>
                         </div>
