@@ -1,7 +1,7 @@
 .tituloNavbar {
     font-size: 3rem;
     cursor: pointer;
-    font-family: Ailerons;
+    font-family: Ailerons, serif;
 }
 
 .navbar {
@@ -14,7 +14,7 @@
 }
 
 .tdNavbar {
-    font-family: "Ailerons";
+    font-family: "Ailerons-Regular", serif;
     font-size: 50px;
     color: whitesmoke;
     cursor: pointer;
