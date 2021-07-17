@@ -38,7 +38,7 @@ export default function ServiciosDesc() {
                         <h1 className="letra">Remodelación</h1>
                     </div>
                     <div style={{padding: "40px"}}/>
-                    <div style={{bottom: "0", position: "relative",}}>
+                    <div style={{bottom: "0", position: "relative"}}>
                     </div>
                 </div>
                 <FooterCompo/>

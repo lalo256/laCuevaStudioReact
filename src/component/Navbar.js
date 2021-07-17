@@ -5,7 +5,8 @@ import './style/Navbar.css';
 import {useHistory} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGripLines} from "@fortawesome/free-solid-svg-icons";
-import Ailerons from '../assets/fonts/Ailerons_Regular.ttf';
+import Logo from '../Images/nombre2.png';
+//import Ailerons from '../assets/fonts/Ailerons_Regular.ttf';
 
 import {Modal} from "react-bootstrap";
 
@@ -50,6 +51,10 @@ export default function Navbar() {
 
     const handleClose = () => setMenu(false);
 
+    function logoClick() {
+        history.push("/home");
+    }
+
     return (
         <React.Fragment>
             {menu ?
@@ -83,7 +88,7 @@ export default function Navbar() {
             <div>
                 <div className="divPrincipalNavbar" style={{position: "relative", top: "0", background: "whitesmoke"}}>
                     <div className="">
-                        <p className="tituloNavbar" onClick={handleSelect} id={1}>LA CUEVA STUDIO</p>
+                        <img src={Logo} className="logImg" onClick={logoClick} alt={"logo"}/>
                     </div>
                     <div className="">
                         <div className="divMenu">

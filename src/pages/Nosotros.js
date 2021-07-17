@@ -3,7 +3,7 @@ import Navbar from "../component/Navbar";
 import FooterCompo from "../component/FooterCompo";
 import '../component/style/Nosotros.css'
 import NosotrosDesc from '../component/NosotrosDesc';
-import videopc from '../Images/fn.mp4';
+import videopc from '../Images/pagina.mp4';
 
 class Nosotros extends React.Component {
     render() {
