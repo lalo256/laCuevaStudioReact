@@ -24,11 +24,6 @@ export default function FooterCompo(props) {
                                 </a>
                             </td>
                             <td>
-                                <a href="https://www.facebook.com/lacuevastudioarq">
-                                    <ul><li className="links">Facebook</li></ul>
-                                </a>
-                            </td>
-                            <td>
                                 <h6 className="CopyR">Copyright © Todos los Derechos Reservados.</h6>
                             </td>
                         </tr>
