@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './style/Navbar.css';
 import {useHistory} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGripLines} from "@fortawesome/free-solid-svg-icons";
+import {faGripLines, faTimes} from "@fortawesome/free-solid-svg-icons";
 import Logo from '../Images/nombre2.png';
 //import Ailerons from '../assets/fonts/Ailerons_Regular.ttf';
 
@@ -58,54 +58,57 @@ export default function Navbar() {
     return (
         <React.Fragment>
             {menu ?
-                <Modal show={menu} onHide={handleClose}>
+                <Modal show={menu} onHide={handleClose} size={"xl"}>
                     <Modal.Body className="bodyMenu">
                         <div>
-                            <table onClick={handleSelect}>
+                            <table onClick={handleSelect} style={{width: "100%"}}>
                                 <tr>
-                                    <td id={1} className="tdNavbar">HOME</td>
+                                    <td><img src={Logo} id={1} alt="logoMenu"
+                                             style={{width: "20%", cursor: "pointer"}}/></td>
+                                    <td><FontAwesomeIcon icon={faTimes} style={{
+                                        color: "whitesmoke",
+                                        fontSize: "30px",
+                                        cursor: "pointer"
+                                    }} onClick={handleClose}/></td>
                                 </tr>
                                 <tr>
-                                    <td id={2} className="tdNavbar">NOSOTROS</td>
+                                    <td id={2} className="tdNavbar linea1">NOSOTROS</td>
                                 </tr>
                                 <tr>
-                                    <td id={3} className="tdNavbar">SERVICIOS</td>
+                                    <td id={3} className="tdNavbar linea1">SERVICIOS</td>
                                 </tr>
                                 <tr>
-                                    <td id={4} className="tdNavbar">PROYECTOS</td>
+                                    <td id={4} className="tdNavbar linea1">PROYECTOS</td>
                                 </tr>
                                 <tr>
-                                    <td id={5} className="tdNavbar">PRODUCTOS</td>
+                                    <td id={5} className="tdNavbar linea1">PRODUCTOS</td>
                                 </tr>
                                 <tr>
-                                    <td id={6} className="tdNavbar">CONTACTO</td>
+                                    <td id={6} className="tdNavbar linea1">CONTACTO</td>
                                 </tr>
                             </table>
                         </div>
                     </Modal.Body>
 
                 </Modal> : null}
-            <div>
-                <div className="divPrincipalNavbar" style={{position: "relative", top: "0", background: "whitesmoke"}}>
-                    <div className="">
-                        <img src={Logo} className="logImg" onClick={logoClick} alt={"logo"}/>
-                    </div>
-                    <div className="">
-                        <div className="divMenu">
-                            <div className="">
-                                <p className="tituloMenu">
-                                    <span className="displaypc">ARQUITECTURA Y DISEÑO</span>
-                                    <span className="displatmovil">ARQUITECTURA <br/>Y DISEÑO</span>
-                                </p>
-                            </div>
-                            <div style={{right: "5px", position: "absolute"}}>
-                                <button className="BtnMenu" onClick={butonSelect}>
-                                    <FontAwesomeIcon icon={faGripLines} className="iconStyle"
-                                                     style={{color: "whitesmoke"}}/>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
+            <div className="row-cols-1">
+                <div className="col-2">
+                    <img src={Logo} className="logImg" onClick={logoClick} alt={"logo"}/>
+                </div>
+                <div className="col-4">
+
+                </div>
+                <div className="col-2 divMenuNavbar" style={{right: "0", position: "absolute", zIndex: "1"}}>
+                    <table style={{background:"black",width:"4rem",marginTop:"8px"}}>
+                        <tr>
+                            <td style={{fontSize:"25px",color:"whitesmoke",paddingLeft:"10px",fontFamily:"Ailerons"}}>MENU</td>
+                            <td onClick={butonSelect}>
+                                <FontAwesomeIcon icon={faGripLines} className="iconStyle"
+                                                 style={{color: "whitesmoke",cursor:"pointer"}}/>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </React.Fragment>

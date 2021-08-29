@@ -4,12 +4,14 @@
     font-family: Ailerons, serif;
 }
 
-.logImg{
+.logImg {
     position: absolute;
     top: 0;
     width: 300px;
-    padding: 5px 0 0 10px;
+    margin-left: 5px;
+    margin-top: -20px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .navbar {
@@ -26,6 +28,13 @@
     font-size: 50px;
     color: whitesmoke;
     cursor: pointer;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.linea1{
+    border-bottom: 1px solid darkgray;
+    opacity: 1;
 }
 
 .bodyMenu {
@@ -35,7 +44,7 @@
 .BtnMenu {
     height: 4.5rem;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     border: 1px solid black;
 }
 
@@ -68,11 +77,11 @@
     font-family: "Ailerons";
     font-size: 2rem;
     color: whitesmoke;
-    padding-left:5px;
+    padding-left: 5px;
 }
 
 .divPrincipalNavbar {
-    background: whitesmoke;
+    background: transparent;
     height: 4.5rem;
     width: 100%;
 }
@@ -95,40 +104,48 @@ li {
     right: 0;
 }
 
-.displaypc{
+.displaypc {
     display: inline;
 }
-.displatmovil{
+
+.displatmovil {
     display: none;
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px) {
     .tituloMenu {
         font-size: 20px;
         padding-top: 25px;
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .tituloMenu {
         padding-top: 15px;
     }
-    .displaypc{
+
+    .displaypc {
         display: none;
     }
-    .displatmovil{
+
+    .displatmovil {
         display: inline;
     }
+
     .tituloNavbar {
         font-size: 2rem;
         padding-top: 20px;
     }
+    .divMenuNavbar{
+        margin-right: 5%;
+    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .tituloMenu {
         padding-top: 15px;
     }
+
     .tituloNavbar {
         font-size: 2rem;
     }
@@ -137,17 +154,37 @@ li {
         color: black;
         font-size: 3rem;
     }
+
+    .logImg {
+        position: absolute;
+        top: 1rem;
+        width: 200px;
+        margin-left: 3px;
+        margin-top: -20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .divMenuNavbar{
+        margin-right: 10%;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .tituloMenu {
         padding-top: 15px;
         font-size: 15px;
     }
+    .divMenuNavbar{
+        margin-right: 18%;
+    }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .tituloNavbar {
         font-size: 1.5rem;
+    }
+    .divMenuNavbar{
+        margin-right: 22%;
     }
 }

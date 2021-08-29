@@ -46,7 +46,7 @@ class Proyecto extends React.Component {
         if (this.state.Page1 === true) {// eslint-disable-next-line
             return (
                 <React.Fragment>
-                    <Navbar/>
+                    <Navbar/><br/><br/><br/><br/>
                     <div className="container proyect">
 
                         {casa_Selvaggio()}

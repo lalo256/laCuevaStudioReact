@@ -14,7 +14,7 @@ class Producto extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <Navbar />
+                <Navbar /><br/><br/><br/><br/>
                 <div className="row" style={{height:"100%"}}>
                     <div className="container">
                         <div className="col-4">

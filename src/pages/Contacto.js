@@ -109,7 +109,7 @@ class Contacto extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar/>
+                <Navbar/><br/><br/><br/>
                 <div className="divContenidoContacto">
                     <div style={{display: "inline-flex", marginTop: "15px"}}>
                         <span className="spanContactoMovil1 movilView">Tel Contacto: 55 85 09 18 87</span><br/>

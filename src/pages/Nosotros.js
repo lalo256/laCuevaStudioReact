@@ -9,7 +9,7 @@ class Nosotros extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar/>
+                <Navbar/><br/><br/><br/><br/>
                 <div style={{width: "100%", height: "100%", background: "black", left: "0"}}
                      className="container-fluid row NosotrosDiv">
                     <div className={"col-lg-6 col-md-12 NosotrosCont"}>
