@@ -20,7 +20,7 @@ class Nosotros extends React.Component {
                     <div className={"col-lg-6 col-md-12 NosotrosCont"}>
                         <h1 className="presentacinTitulo">Nosotros</h1>
                         <p className="nosotrosPresentacion">
-                            Nacimos bajo la necesidad de ayudar y asesorar a nuestros clientes en la construcción de su
+                            Ayudamos y asesoramos a nuestros clientes en la construcción de su
                             hogar ideal desde el proceso creativo hasta la entrega de sus llaves, Incluyéndolos en cada
                             parte, decisión y acción de su nuevo hogar, enfocándonos en proyectos de diseño arquitectónico,
                             construcción, remodelación, diseño de interiores y mobiliario. <br/>Evitando el estrés y

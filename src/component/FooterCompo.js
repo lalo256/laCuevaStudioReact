@@ -10,17 +10,22 @@ export default function FooterCompo(props) {
                         <tr>
                             <td>
                                 <a href="https://www.instagram.com/lacuevastudio.arquitectos/">
-                                    <ul><li className="links">Instagram</li></ul>
+                                    <ul><li className="links">INSTAGRAM</li></ul>
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.linkedin.com/company/la-cueva-studio/?viewAsMember=true">
-                                    <ul><li className="links">Linkedin</li></ul>
+                                    <ul><li className="links">LINKEDIN</li></ul>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com/lacuevastudioarq">
+                                    <ul><li className="links">FACEBOOK</li></ul>
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.pinterest.com.mx/lacuevastudio_Arq/_saved/">
-                                    <ul><li className="links">Pinterest</li></ul>
+                                    <ul><li className="links">PINTEREST</li></ul>
                                 </a>
                             </td>
                             <td>
