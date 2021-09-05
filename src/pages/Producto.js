@@ -28,8 +28,8 @@ class Producto extends React.Component {
                         </div>
                     </div>
                 </div>
-                <br/>
-                <div style={{bottom: "0"}}>
+                <br/><br/><br/><br/><br/>
+                <div>
                     <FooterCompo/>
                 </div>
             </React.Fragment>
