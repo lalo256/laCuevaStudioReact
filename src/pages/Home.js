@@ -2,11 +2,7 @@ import React, {/*useEffect, useRef, useState*/} from 'react';
 import Navbar from "../component/Navbar";
 import '../component/style/Home.css';
 import Carousel from "react-bootstrap/Carousel";
-import carru1 from '../Images/portada1.jpg';
-import carru2 from '../Images/portada2.jpg';
-import carru3 from '../Images/portada3.jpg';
-import carru4 from '../Images/portada4.jpg';
-import carru5 from '../Images/portada5.jpg';
+import carru1 from '../Images/portada1.jpeg';
 import FooterCompo from "../component/FooterCompo";
 //import {motion} from "framer-motion";
 
@@ -68,7 +64,7 @@ export default function Home() {
                     <motion.div variants={fadeInContainerWithStagger} initial="hidden"
                                 animate="visible">
                         <motion.div variants={prueba}>
-                            <h4 className="tituloImg1">{"CASA DOPPIA"}</h4>
+                            <h4 className="tituloImg1">{"texto de prueba lucas es una maria"}</h4>
                         </motion.div>
                     </motion.div>
                 )}
@@ -149,30 +145,6 @@ export default function Home() {
                         <img className="imgcarusel" src={carru1} alt="imgCarusel1"/>
                         <Carousel.Caption>
                             {/*carrucelText1()*/}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="imgcarusel" src={carru2} alt="imgCarusel2"/>
-                        <Carousel.Caption>
-                            {/*carrucelText2()*/}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="imgcarusel" src={carru3} alt="imgCarusel3"/>
-                        <Carousel.Caption>
-                            {/*carrucelText3()*/}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="imgcarusel" src={carru4} alt="imgCarusel3"/>
-                        <Carousel.Caption>
-                            {/*carrucelText4()*/}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="imgcarusel" src={carru5} alt="imgCarusel3"/>
-                        <Carousel.Caption>
-                            {/*carrucelText5()*/}
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

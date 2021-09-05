@@ -12,14 +12,14 @@ export default function ServiciosDesc() {
                 <p className="serviciosTitle">Servicios</p>
                 <div className="container-fluid">
                     <p className="descripcionServicios">
-                        Nuestros servicios están enfocados y pensados para ti, adaptándolo a tus necesidades, gustos,
-                        costumbres, y presupuesto, todo a tu medida y sin ningún tipo de complicaciones en el proceso.
-                        te guiaremos y asesoraremos a tomar las mejores decisiones, contando contigo en todo momento en
-                        el proyecto, Nos encargaremos del diseño como de la construcción. Eso incluye la gestión de las
-                        licencias, de los permisos necesarios, de los documentos técnicos y todos los trámites
-                        burocráticos correspondientes antes, durante y después de la obra.  <br/>Para que no tengas ningún imprevistos en mudarte a tu nuevo hogar.
+                        Trabajamos cada uno de nuestros proyectos con técnicas en 2D asi como en 3D, utilizando una
+                        combinación de bocetos a mano, software de computadora y modelos físicos para dar una impresión
+                        clara de los espacios que estamos creando.
+                        adaptámos las necesidades, gustos, costumbres, y presupuesto de nuestros clientes,
+                        contando con ellos en todo momento y creando espacios significativos que tienen un impacto en su
+                        forma de vida.
                         <br/><br/>
-
+                        Si está buscando crear una historia única para tu vida, estamos aquí para escuchar.
                     </p>
                 </div>
                 <br/>

@@ -58,7 +58,7 @@ export default function Navbar() {
     return (
         <React.Fragment>
             {menu ?
-                <Modal show={menu} onHide={handleClose} size={"xl"}>
+                <Modal show={menu} onHide={handleClose} size={"lg"}>
                     <Modal.Body className="bodyMenu">
                         <div>
                             <table onClick={handleSelect} style={{width: "100%"}}>
@@ -100,12 +100,11 @@ export default function Navbar() {
 
                 </div>
                 <div className="col-2 divMenuNavbar" style={{right: "0", position: "absolute", zIndex: "1"}}>
-                    <table style={{background:"black",width:"4rem",marginTop:"8px"}}>
+                    <table style={{background:"whitesmoke",width:"4rem",marginTop:"8px", borderRadius:"15px"}}>
                         <tr>
-                            <td style={{fontSize:"25px",color:"whitesmoke",paddingLeft:"10px",fontFamily:"Ailerons"}}>MENU</td>
                             <td onClick={butonSelect}>
                                 <FontAwesomeIcon icon={faGripLines} className="iconStyle"
-                                                 style={{color: "whitesmoke",cursor:"pointer"}}/>
+                                                 style={{color: "black",cursor:"pointer",paddingLeft:"15px"}}/>
                             </td>
                         </tr>
                     </table>

@@ -18,16 +18,13 @@ class Nosotros extends React.Component {
                         </video>
                     </div>
                     <div className={"col-lg-6 col-md-12 NosotrosCont"}>
-                        <h1 className="presentacinTitulo">Nosotros</h1>
                         <p className="nosotrosPresentacion">
-                            Ayudamos y asesoramos a nuestros clientes en la construcción de su
-                            hogar ideal desde el proceso creativo hasta la entrega de sus llaves, Incluyéndolos en cada
-                            parte, decisión y acción de su nuevo hogar, enfocándonos en proyectos de diseño arquitectónico,
-                            construcción, remodelación, diseño de interiores y mobiliario. <br/>Evitando el estrés y
-                            complicaciones que este proceso genera.
-                            {/*
-                            <h2 className="lema">"Arquitectura como tu digas, como tu quieras y como tu decidas”</h2>
-                            */}
+                            Ayudamos y asesoramos en la construcción de tu hogar ideal, adaptando cada diseño a tu
+                            personalidad.
+
+                            En cada proyecto te Incluimos para formar parte, decisión y acción de nuestros diseños, de
+                            esta manera, habilitamos espacios para contar historias, aportando un enfoque, personal y
+                            único a cada proyecto.
                         </p>
                     </div>
 
