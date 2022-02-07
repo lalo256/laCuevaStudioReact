@@ -1,0 +1,30 @@
+.backSeccion2{
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+
+.SeccionImpar{
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+.SeccionPar{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.iconFooter{
+    margin: 8px;
+    font-size: 30px;
+}
+
+.iconFooter1{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.contactoBtn{
+    font-size: 30px;
+}

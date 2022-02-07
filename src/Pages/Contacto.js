@@ -1,10 +1,13 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import Navbar from "../component/Navbar";
-import FooterCompo from "../component/FooterCompo";
-import '../component/style/Contacto.css';
-import Contact from '../Images/contacImg.jpeg';
-import ContactMovil from '../Images/contacImg2.jpeg';
+import '../Pages/Contacto.css';
+import Contact from '../Images/arqDis.jpeg';
+import ContactMovil from '../Images/arqDis.jpeg';
+//import NavbarMenu from "../Components/NavbarMenu";
+import FootSeccion from "../Components/FootSeccion";
+import {useHistory} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHome} from "@fortawesome/free-solid-svg-icons";
 
 class Contacto extends React.Component {
 
@@ -109,7 +112,7 @@ class Contacto extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar/><br/><br/><br/>
+                <NavbarContacto contacto={true}/>
                 <div className="divContenidoContacto">
                     <div style={{display: "inline-flex", marginTop: "15px"}}>
                         <span className="spanContactoMovil1 movilView">Tel Contacto: 55 85 09 18 87</span><br/>
@@ -297,8 +300,8 @@ class Contacto extends React.Component {
                         </div>
 
                     </div>
-                    <div className="divFootContacto">
-                        <FooterCompo/>
+                    <div style={{marginTop:'25px'}}>
+                        <FootSeccion/>
                     </div>
                 </div>
 
@@ -308,3 +311,21 @@ class Contacto extends React.Component {
 }
 
 export default Contacto;
+
+
+function NavbarContacto(props) {
+    const history = useHistory();
+
+    function toHome(){
+        history.push('/home');
+    }
+
+    return (
+        <React.Fragment>
+
+            <span>
+                <FontAwesomeIcon icon={faHome} className={'navIcon'} onClick={toHome}/>
+            </span>
+        </React.Fragment>
+    );
+}

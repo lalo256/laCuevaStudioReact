@@ -1,0 +1,40 @@
+.backgroundInicio{
+    background-color: black;
+    height: 1100px;
+}
+
+.navIcon{
+    position: fixed;
+    background-color: whitesmoke;
+    padding: 8px;
+    font-size: 40px;
+    border-radius: 30px;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    z-index: 2;
+}
+.tituloModal{
+    font-family: Ailerons, serif;
+    font-size: 3rem;
+
+}
+.InicioDescrip{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Georgia;
+}
+
+.TituloSecciones{
+    font-size: 3rem;
+    font-family: Ailerons, serif;
+    font-weight: lighter;
+}
+
+.contenidoSecciones{
+    font-size: 1.5rem;
+    font-family: Georgia,serif;
+    padding-top: 5rem;
+}
+
