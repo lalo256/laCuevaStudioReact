@@ -2,7 +2,6 @@
   "name": "lacuevastudiov2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/home",
   "rnpm": {
     "assets": [
       "./assets/fonts/Ailerons_Regular.ttf"
