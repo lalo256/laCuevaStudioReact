@@ -1,6 +1,13 @@
 .backgroundInicio{
     background-color: black;
-    height: 1000px;
+    height: 800px;
+}
+
+.imgLogoEnInicio{
+    z-index: 2;
+    position: absolute;
+    width: 60%;
+    top: -40px;
 }
 
 .navIcon{

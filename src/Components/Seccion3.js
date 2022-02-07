@@ -19,7 +19,7 @@ export default function Seccion3() {
                             Contribuimos significativamente a mejorar la calidad de vida de nuestros clientes, mediante
                             el diseño de proyectos responsables y sostenibles, aprovechado al máximo las tecnologías
                             actuales para el desarrollo de procesos constructivos, instalaciones, sistemas de control,
-                            calidad de los materiales etc , en beneficio del clima, el consumo de energía en la
+                            calidad de los materiales etc, en beneficio del ambiente, consumo de energía en la
                             construcción y la salud de nuestros clientes.
 
                         </p>
