@@ -16,7 +16,7 @@
 
 .iconFooter{
     margin: 8px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .iconFooter1{
@@ -27,4 +27,12 @@
 
 .contactoBtn{
     font-size: 30px;
+}
+
+.btnContactoPosition{
+    margin-top: 5rem;
+}
+
+.logoSofware{
+    width: 220px;
 }

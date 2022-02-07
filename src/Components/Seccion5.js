@@ -12,10 +12,10 @@ export default function Seccion5() {
             <div className={'SeccionImpar'}>
                 <Row className='show-grid'>
                     <Col md={7}>
-                        <img src={imagen1} width={'100%'}/>
+                        <img src={imagen1} width={'100%'} alt={'imagen1'}/>
                     </Col>
                     <Col md={4}>
-                        <img src={logo} width={'100%'}/>
+                        <img src={logo} width={'100%'} alt={'logo'}/>
                         <p className={'contenidoSecciones'}>
                             La fuerza de nuestro equipo viene de superar nuestras individualidades y formar bajo el
                             mismo concepto, La Cueva Studio Arquitectos.

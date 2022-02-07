@@ -12,7 +12,7 @@ export default function Seccion2() {
                 <Row className='show-grid'>
                     <Col md={1}/>
                     <Col md={4}>
-                        <h2 className={'TituloSecciones'}>Arquitectura + interiorismo</h2>
+                        <h2 className={'TituloSecciones'}>Arquitectura+interiorismo</h2>
                         <p className={'contenidoSecciones'}>
                             Nos especializamos en la realización de proyectos para viviendas unifamiliares, con técnicas
                             en 2D así como en 3D, utilizando una combinación de bocetos a mano, software de computadora
@@ -25,10 +25,11 @@ export default function Seccion2() {
                             nuestros clientes, nos encargamos de gestionar la compra, el transporte y el montaje del
                             mobiliario y los materiales que conforman el interiorismo.
                         </p>
+
                         <ToContacto/>
                     </Col>
                     <Col md={7}>
-                        <img src={imagen1} width={'100%'}/>
+                        <img src={imagen1} width={'100%'} alt={'imagen1'}/>
                     </Col>
                 </Row>
             </div>

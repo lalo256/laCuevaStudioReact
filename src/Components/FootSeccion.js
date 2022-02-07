@@ -4,7 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faLinkedin, faPinterest} from "@fortawesome/free-brands-svg-icons";
 import './Secciones.css';
 import {useHistory} from "react-router-dom";
-import {faArrowCircleRight, faHome} from "@fortawesome/free-solid-svg-icons";
+import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
+import logoSoftware from '../Images/LCSSoftware.jpeg';
 
 export default function FootSeccion() {
     return (
@@ -12,7 +13,7 @@ export default function FootSeccion() {
             <div className={'SeccionPar'}>
                 <Row className='show-grid'>
                     <Col md={3}>
-                        <div style={{display: 'inline-flex'}}>
+                        <div style={{display: 'inline-flex'}} className={'footerHover'}>
                             <a href="https://www.facebook.com/lacuevastudioarq">
                                 <FontAwesomeIcon icon={faFacebook} className={'iconFooter'}/>
                             </a>
@@ -31,11 +32,10 @@ export default function FootSeccion() {
 
                     </Col>
                     <Col md={3}>
-
+                        <p>La Cueva Studio ©2022</p>
                     </Col>
                     <Col md={3}>
-                        <p>La Cueva Studio ©2022</p>
-                        <p>Powered By LaCuevaStudio/Software</p>
+                        <p>Powered By <br/><img src={logoSoftware} alt={'logoSoftware'} className={'logoSofware'}/></p>
                     </Col>
                 </Row>
             </div>
@@ -53,10 +53,13 @@ export function ToContacto(props) {
 
     return (
         <React.Fragment>
-            <button className={!props.seccionImpar? 'btn btn-outline-dark': 'btn btn-outline-light'} onClick={toContacto}>
-                <FontAwesomeIcon icon={faArrowCircleRight} className={'iconFooter1'}/><span
-                className={'contactoBtn'}>Contactanos </span><br/>
-            </button>
+            <div className={'btnContactoPosition'}>
+                <button className={!props.seccionImpar ? 'btn btn-outline-dark' : 'btn btn-outline-light'}
+                        onClick={toContacto}>
+                    <FontAwesomeIcon icon={faArrowCircleRight} className={'iconFooter1'}/><span
+                    className={'contactoBtn'}>Contactanos </span><br/>
+                </button>
+            </div>
         </React.Fragment>
     );
 }

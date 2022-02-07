@@ -7,7 +7,7 @@ export default function Inicio() {
     return (
         <React.Fragment>
             <div className={'backgroundInicio'}>
-                <img className="imgcarusel" src={carru1} alt="imgCarusel1"/>
+                <img className="imgPrincipal" src={carru1} alt="imgCarusel1"/>
                 <Container>
                     <p className={'InicioDescrip'}>
                         Ayudamos a crear espacios únicos, sustentables, inteligentes y eficientes para viviendas

@@ -1,11 +1,9 @@
 import React, {useState} from "react";
 import './Inicio.css';
-import {faBars, faHome, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Button, Modal} from "react-bootstrap";
+import {Modal} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {useHistory} from "react-router-dom";
-
 
 export default function NavbarMenu(props) {
     const [show, setShow] = useState(false);
@@ -21,19 +19,22 @@ export default function NavbarMenu(props) {
                         <span className={'tituloModal'}>La Cueva Studio</span>
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body style={{background: "black"}}>
+                <Modal.Body style={{background: "black"}} className={'navbarHover'}>
                     <ul>
-                        <a href='#Seccion2' onClick={handleClose}>
+                        <a href='#Inicio' onClick={handleClose}>
+                            <li>Inicio</li>
+                        </a>
+                        <a href='#Arquitectura+interiorismo' onClick={handleClose}>
                             <li>Arquitectura + interiorismo</li>
                         </a>
-                        <a href='#Seccion3' onClick={handleClose}>
+                        <a href='#Sustentabilidad+Tecnologia' onClick={handleClose}>
                             <li>Sustentabilidad + Tecnologia</li>
                         </a>
-                        <a href='#Seccion4' onClick={handleClose}>
+                        <a href='#ProyectosSolidarios' onClick={handleClose}>
                             <li>Proyectos solidarios</li>
                         </a>
-                        <a href='#Seccion5' onClick={handleClose}>
-                            <li>ultima</li>
+                        <a href='#Equipo' onClick={handleClose}>
+                            <li>Equipo</li>
                         </a>
                     </ul>
                 </Modal.Body>

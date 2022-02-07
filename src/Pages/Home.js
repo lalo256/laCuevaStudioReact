@@ -12,21 +12,23 @@ export default function Home() {
     return (
         <React.Fragment>
             <NavbarMenu/>
-            <Inicio/>
+            <a name='Inicio'>
+                <Inicio/>
+            </a>
             <Container style={{height: '2.5rem', borderBottom: '2px solid black', marginBottom: '2.5rem'}}/>
-            <a name='Seccion2'>
+            <a name='Arquitectura+interiorismo'>
                 <Seccion2/>
             </a>
             <Container style={{height: '2.5rem', borderBottom: '2px solid black', marginBottom: '2.5rem'}}/>
-            <a name='Seccion3'>
+            <a name='Sustentabilidad+Tecnologia'>
                 <Seccion3/>
             </a>
             <Container style={{height: '2.5rem', borderBottom: '2px solid black', marginBottom: '2.5rem'}}/>
-            <a name='Seccion4'>
+            <a name='ProyectosSolidarios'>
                 <Seccion4/>
             </a>
             <Container style={{height: '2.5rem', borderBottom: '2px solid black', marginBottom: '2.5rem'}}/>
-            <a name='Seccion5'>
+            <a name='Equipo'>
                 <Seccion5/>
             </a>
             <Container style={{height: '2.5rem', borderBottom: '2px solid black', marginBottom: '2.5rem'}}/>

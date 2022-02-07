@@ -18,10 +18,11 @@ export default function Seccion4() {
                             hacer del mundo un lugar mejor, en el que se reduzcan las desigualdades sociales y la
                             vivienda digna sea una prioridad.
                         </p>
+
                         <ToContacto/>
                     </Col>
                     <Col md={7}>
-                        <img src={imagen1} width={'100%'}/>
+                        <img src={imagen1} width={'100%'} alt={'imagen1'}/>
                     </Col>
                 </Row>
             </div>
