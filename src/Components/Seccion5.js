@@ -1,7 +1,7 @@
 import React from "react";
 import './Secciones.css';
 import {Col, Row} from "react-bootstrap";
-import imagen1 from '../Images/noso.jpeg';
+import imagen1 from '../Images/noso.jpg';
 import logo from '../Images/nombre2.png';
 import {ToContacto} from "./FootSeccion";
 

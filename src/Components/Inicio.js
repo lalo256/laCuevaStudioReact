@@ -2,7 +2,7 @@ import React from "react";
 import carru1 from '../Images/portada1.jpeg';
 import './Inicio.css';
 import {Container} from "react-bootstrap";
-import imagen1 from "../Images/noso.jpeg";
+import imagen1 from "../Images/noso.jpg";
 import logo from '../Images/nombre2.png';
 
 export default function Inicio() {
