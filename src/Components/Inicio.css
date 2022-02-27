@@ -1,6 +1,6 @@
 .backgroundInicio{
     background-color: black;
-    height: 1000px;
+    height: 900px;
 }
 
 .imgLogoEnInicio{
@@ -50,7 +50,7 @@
 }
 
 .imgPrincipal{
-    opacity: .75;
+    opacity: .85;
 }
 
 .navbarHover{

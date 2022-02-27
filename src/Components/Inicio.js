@@ -12,10 +12,11 @@ export default function Inicio() {
             <div className={'backgroundInicio'}>
                 <img className="imgPrincipal" src={carru1} alt="imgCarusel1" width={'100%'}/>
                 <Container>
+                    { /*
                     <p className={'InicioDescrip'}>
                         Ayudamos a crear espacios únicos, sustentables, inteligentes y eficientes para viviendas
                         unifamiliares, mejorando la calidad de vida de las personas.
-                    </p>
+                    </p>*/}
                 </Container>
 
             </div>
